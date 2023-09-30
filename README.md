@@ -1,5 +1,5 @@
 ## 1. Mục đích: 
-**Xây dựng tựa game 2D top-dơn shooter lấy ý tưởng từ Vampire Survivor, chạy trên nền tảng web**
+**Xây dựng tựa game 2D top-down shooter lấy ý tưởng từ Vampire Survivor, chạy trên nền tảng web**
 ***
 ###  Mục tiêu:
 Mục tiêu/Tính năng chính:
