@@ -37,7 +37,7 @@ Mục tiêu phụ/mở rộng:
 
 ***
 ## 2. Công nghệ:
-- Game Engine: GDevelop5 - [https://gdevelop.io/]
+- Game Engine: [GDevelop5](https://gdevelop.io/)
 ## 3. Phân công công việc:
 ### Thành viên:
 - Nguyễn Đăng Khôi - 21DH11432
@@ -48,13 +48,13 @@ Mục tiêu phụ/mở rộng:
 |    1    |  ✅  |  ✅  |
 |    2    |  ☑️  |  ☑️  |
 |    3    |  ❌  |  ❌  |
-|    4    |  ❌  |  [ ]  |
-|    5    |  [ ]  |  [ ]  |
-|    6    |  [ ]  |  [ ]  |
-|    7    |  [ ]  |  [ ]  |
-|    8    |  [ ]  |  [ ]  |
-|    9    |  [ ]  |  [ ]  |
-|    10   |  [ ]  |  [ ]  |
+|    4    |  ❌  |  ❌  |
+|    5    |  ❌  |  ❌ |
+|    6    |  ❌  |  ❌  |
+|    7    |  ❌  |  ❌  |
+|    8    |  ❌  |  ❌  |
+|    9    |  ❌ | ❌  |
+|    10   | ❌  |  ❌  |
 
 Chi tiết Roadmap: [https://trello.com/b/SLVbwj4V/shooter-survival]
 
