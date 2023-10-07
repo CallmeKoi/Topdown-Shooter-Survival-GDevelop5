@@ -180,13 +180,45 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/06a05d2836f7624744faac2ce62e0b31d939df4fcb964c2b84cbb132784d6e47_Knight Female_Run_4.png",
           "name": "Knight Female_Run_4.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Anime Sword.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Anime Sword.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Weapons/2d94a3fd5705afb9524d5615d47df336ab1d4a2a7c12ba4ab220189763dda05c_Anime Sword.png",
+          "name": "Anime Sword.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Gun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gun.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/Props/f06936e9c60e8d2b498bc9b13df90335ce4f8bf9db7c4901562cd735033a04bc_Gun.png",
+          "name": "Gun.png"
+        }
       }
     ],
     "resourceFolders": []
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Equiped",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
