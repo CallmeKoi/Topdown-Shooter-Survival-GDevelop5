@@ -1,8 +1,8 @@
-## 1. Mục đích: 
+## 1. Mục đích: 🏁🏁🏁
 **Xây dựng tựa game 2D top-down shooter lấy ý tưởng từ Vampire Survivor, chạy trên nền tảng web**
 ***
-###  Mục tiêu:
-Mục tiêu/Tính năng chính:
+###  Mục tiêu: 
+🚩Mục tiêu/Tính năng chính: 🚩
  - Nhân vật có thể di chuyển cơ bản, có tính máu
  - Nhân vật có thể nhặt vũ khí (súng)
  - Vũ khí có hệ thống tính đạn
@@ -14,7 +14,7 @@ Mục tiêu/Tính năng chính:
  - Có trạng thái thua
  - Có trạng thái thắng khi hết thời gian: 1 phút 30 giây
  - Có bộ đém giờ
-Mục tiêu phụ/mở rộng:
+🔥Mục tiêu phụ/mở rộng: 🔥
  - Thêm hệ thống tính điểm
  - Thêm điểm kinh nghiệm cho nhân vật
  - Thêm tính năng nâng cấp nhân vật, vũ khí
@@ -23,7 +23,7 @@ Mục tiêu phụ/mở rộng:
  - Thêm kỹ năng cho nhân vật
  - Thêm nhận vật: 4 loại
 ***
-###  Công việc:
+###  Công việc: 
 1. Tiếp cận với công nghệ mới
 2. Chuẩn bị tài nguyên
 3. Xây dựng màn chơi chính
