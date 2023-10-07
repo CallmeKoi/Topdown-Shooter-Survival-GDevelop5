@@ -63,7 +63,125 @@
     "currentPlatform": "GDevelop JS platform"
   },
   "resources": {
-    "resources": [],
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Hit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Knight Female_Hit.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/f8c218f3b3bb5fb176d8f9e3d7948e6a35c111ff234dd52d4ecf5a046e5dec59_Knight Female_Hit.png",
+          "name": "Knight Female_Hit.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Knight Female_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/90e94594ae3f842d079725d1398d04a0331abfc747c21da6ee6896874c5745cd_Knight Female_Idle_1.png",
+          "name": "Knight Female_Idle_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Knight Female_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/e32e6de8e01ca9f064a8432553f9690ad76d05292ec942ae3df837a1f20dfe5c_Knight Female_Idle_2.png",
+          "name": "Knight Female_Idle_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Knight Female_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/2c807b558d8e196c87b734fa9034e93e6c6e1c50ed7c4b94d06755632b61ac6c_Knight Female_Idle_3.png",
+          "name": "Knight Female_Idle_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Knight Female_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/cca8b6ab988d2cb206bfa385a3747955343b82a40fdf1af6ebc937af121373af_Knight Female_Idle_4.png",
+          "name": "Knight Female_Idle_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Knight Female_Run_1.png\",\"extension\":\".png\"}",
+        "name": "Knight Female_Run_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/eeff84270ff0a241a3e13ac81fa41bc3c045c51d4cd02c8a799d866eedee5690_Knight Female_Run_1.png",
+          "name": "Knight Female_Run_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Knight Female_Run_2.png\",\"extension\":\".png\"}",
+        "name": "Knight Female_Run_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/e870cf6b8c6d18a83b9a281e8565b5f1c17f696b0681172b122baa3dc0e70661_Knight Female_Run_2.png",
+          "name": "Knight Female_Run_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Knight Female_Run_3.png\",\"extension\":\".png\"}",
+        "name": "Knight Female_Run_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/195fd352119820c5837678f3331539c6294c6adf9fc6c477f947ea15a18ee521_Knight Female_Run_3.png",
+          "name": "Knight Female_Run_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Knight Female_Run_4.png\",\"extension\":\".png\"}",
+        "name": "Knight Female_Run_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/06a05d2836f7624744faac2ce62e0b31d939df4fcb964c2b84cbb132784d6e47_Knight Female_Run_4.png",
+          "name": "Knight Female_Run_4.png"
+        }
+      }
+    ],
     "resourceFolders": []
   },
   "objects": [],
