@@ -56,4 +56,5 @@ Mục tiêu phụ/mở rộng:
 |    9    |  [ ]  |  [ ]  |
 |    10   |  [ ]  |  [ ]  |
 
+Chi tiết Roadmap: [https://trello.com/b/SLVbwj4V/shooter-survival]
 
