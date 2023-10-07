@@ -13,7 +13,8 @@
  - Có 2 loại vũ khí
  - Có trạng thái thua
  - Có trạng thái thắng khi hết thời gian: 1 phút 30 giây
- - Có bộ đém giờ
+ - Có bộ đếm giờ
+
 🔥Mục tiêu phụ/mở rộng: 🔥
  - Thêm hệ thống tính điểm
  - Thêm điểm kinh nghiệm cho nhân vật
@@ -49,12 +50,12 @@
 |    2    |  ☑️  |  ☑️  |
 |    3    |  ❌  |  ❌  |
 |    4    |  ❌  |  ❌  |
-|    5    |  ❌  |  ❌ |
+|    5    |  ❌  |  ❌  |
 |    6    |  ❌  |  ❌  |
 |    7    |  ❌  |  ❌  |
 |    8    |  ❌  |  ❌  |
-|    9    |  ❌ | ❌  |
-|    10   | ❌  |  ❌  |
+|    9    |  ❌  |  ❌  |
+|    10   | ❌   |  ❌  |
 
 Chi tiết Roadmap: [https://trello.com/b/SLVbwj4V/shooter-survival]
 
