@@ -21,7 +21,19 @@
     "zoomFactor": 0.6672773998329975,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Objects",
+      "objects": [
+        {
+          "name": "Player"
+        },
+        {
+          "name": "Gun"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -74,7 +86,7 @@
           "customIsometryAngle": 30,
           "deceleration": 8000,
           "ignoreDefaultControls": false,
-          "maxSpeed": 150,
+          "maxSpeed": 100,
           "movementAngleOffset": 0,
           "name": "TopDownMovement",
           "rotateObject": false,
@@ -103,14 +115,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -145,14 +157,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -187,14 +199,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -229,14 +241,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -283,14 +295,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -325,14 +337,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -367,14 +379,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -409,14 +421,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -463,14 +475,14 @@
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 27.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 14
                   },
                   "customCollisionMask": [
                     [
@@ -570,42 +582,70 @@
   ],
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Beginning of Scene",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "2.5",
-            "",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "2.5",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "Player",
-            "",
-            "",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Objects",
+                "=",
+                "Objects.Y()"
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -768,7 +808,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Pick up weapon when close\nPress E to equip"
+              "comment": "Show dialog when close to weapon\nPress E to equip weapon"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -780,41 +820,49 @@
                   "parameters": [
                     "Player",
                     "Gun",
-                    "10",
+                    "20",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "e"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetObjectVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "Gun",
-                    "Equiped",
-                    "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Gun",
-                    "=",
-                    "Player.PointX(\"Hand\")",
-                    "=",
-                    "Player.PointY(\"Hand\")"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "e"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Gun",
+                        "=",
+                        "Player.PointX(\"Hand\")",
+                        "=",
+                        "Player.PointY(\"Hand\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Gun",
+                        "Equiped",
+                        "True"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -857,7 +905,18 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Gun",
+                    "=",
+                    "Player.ZOrder()+1"
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
