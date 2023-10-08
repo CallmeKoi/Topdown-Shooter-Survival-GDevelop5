@@ -15,7 +15,7 @@
     "packageName": "com.example.gamename",
     "pixelsRounding": true,
     "projectUuid": "a0b9a25b-a756-40a2-bd1a-73261c508e84",
-    "scaleMode": "nearest",
+    "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "useExternalSourceFiles": false,
@@ -179,19 +179,6 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/06a05d2836f7624744faac2ce62e0b31d939df4fcb964c2b84cbb132784d6e47_Knight Female_Run_4.png",
           "name": "Knight Female_Run_4.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Anime Sword.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Anime Sword.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Weapons/2d94a3fd5705afb9524d5615d47df336ab1d4a2a7c12ba4ab220189763dda05c_Anime Sword.png",
-          "name": "Anime Sword.png"
         }
       },
       {

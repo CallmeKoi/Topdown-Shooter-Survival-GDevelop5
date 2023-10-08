@@ -30,11 +30,26 @@
       "height": 0,
       "layer": "",
       "name": "Player",
-      "persistentUuid": "d910c8fc-5dd7-4d9c-9ad6-190258d53581",
+      "persistentUuid": "681688a5-3b19-4e6e-9cda-613e52a48d00",
       "width": 0,
-      "x": 646,
-      "y": 291,
+      "x": 642,
+      "y": 331,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Gun",
+      "persistentUuid": "99b4da72-aaa7-4230-8097-52220e835874",
+      "width": 0,
+      "x": 685,
+      "y": 325,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -43,7 +58,7 @@
   "objects": [
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
+      "assetStoreId": "33ed30afda21555c3970a46738516ac9bd9debdeb227ecac941391f7a38f020b",
       "name": "Player",
       "tags": "",
       "type": "Sprite",
@@ -57,7 +72,7 @@
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "deceleration": 800,
+          "deceleration": 8000,
           "ignoreDefaultControls": false,
           "maxSpeed": 150,
           "movementAngleOffset": 0,
@@ -78,8 +93,14 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "90e94594ae3f842d079725d1398d04a0331abfc747c21da6ee6896874c5745cd_Knight Female_Idle_1.png",
-                  "points": [],
+                  "image": "Knight Female_Idle_1.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -114,8 +135,14 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "e32e6de8e01ca9f064a8432553f9690ad76d05292ec942ae3df837a1f20dfe5c_Knight Female_Idle_2.png",
-                  "points": [],
+                  "image": "Knight Female_Idle_2.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -150,8 +177,14 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "2c807b558d8e196c87b734fa9034e93e6c6e1c50ed7c4b94d06755632b61ac6c_Knight Female_Idle_3.png",
-                  "points": [],
+                  "image": "Knight Female_Idle_3.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -186,8 +219,14 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "cca8b6ab988d2cb206bfa385a3747955343b82a40fdf1af6ebc937af121373af_Knight Female_Idle_4.png",
-                  "points": [],
+                  "image": "Knight Female_Idle_4.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -234,8 +273,14 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "eeff84270ff0a241a3e13ac81fa41bc3c045c51d4cd02c8a799d866eedee5690_Knight Female_Run_1.png",
-                  "points": [],
+                  "image": "Knight Female_Run_1.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -270,8 +315,14 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "e870cf6b8c6d18a83b9a281e8565b5f1c17f696b0681172b122baa3dc0e70661_Knight Female_Run_2.png",
-                  "points": [],
+                  "image": "Knight Female_Run_2.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -306,8 +357,14 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "195fd352119820c5837678f3331539c6294c6adf9fc6c477f947ea15a18ee521_Knight Female_Run_3.png",
-                  "points": [],
+                  "image": "Knight Female_Run_3.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -342,8 +399,14 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "06a05d2836f7624744faac2ce62e0b31d939df4fcb964c2b84cbb132784d6e47_Knight Female_Run_4.png",
-                  "points": [],
+                  "image": "Knight Female_Run_4.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -372,6 +435,128 @@
                       {
                         "x": 0,
                         "y": 28
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Knight Female_Hit.png",
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 8
+                      },
+                      {
+                        "x": 15,
+                        "y": 8
+                      },
+                      {
+                        "x": 15,
+                        "y": 28
+                      },
+                      {
+                        "x": 0,
+                        "y": 28
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "fb540ae861b7ddaa64b46c86920d1aa207e95d611d0e4ce65394f2fff3b42c25",
+      "name": "Gun",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Equiped",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Gun.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 3,
+                    "y": 5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 3,
+                    "y": 5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 8
+                      },
+                      {
+                        "x": 0,
+                        "y": 8
                       }
                     ]
                   ]
@@ -432,125 +617,336 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Movements",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Player",
-                "TopDownMovement"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "TopDownMovementBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Animation",
+                    "=",
+                    "\"Idle\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-              },
-              "parameters": [
-                "Player",
-                "Animation",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Player",
-                "TopDownMovement"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Animation",
+                    "=",
+                    "\"Run\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": []
-            }
-          ],
-          "actions": [
+              "comment": "Make Player face towards cursor"
+            },
             {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "<",
+                    "CursorX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Player",
+                    ">",
+                    "CursorX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "Player",
-                "Animation",
-                "=",
-                "1"
+              "comment": "Pick up weapon when close\nPress E to equip"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Gun",
+                    "10",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "e"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Gun",
+                    "Equiped",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Gun",
+                    "=",
+                    "Player.PointX(\"Hand\")",
+                    "=",
+                    "Player.PointY(\"Hand\")"
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Gun",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "PosX"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "Player",
-                "<",
-                "CursorX()"
+              "comment": "Make Gun attached to Player and points to cursor"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Gun",
+                    "Equiped",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Gun",
+                        "=",
+                        "Player.PointX(\"Hand\")",
+                        "=",
+                        "Player.PointY(\"Hand\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RotateTowardPosition"
+                      },
+                      "parameters": [
+                        "Gun",
+                        "CursorX()",
+                        "CursorY()",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Gun",
+                        ">",
+                        "CursorX()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "Gun",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Gun",
+                        "<",
+                        "CursorX()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "Gun",
+                        "Flippable",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Player",
-                "Flippable",
-                "no"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Player",
-                ">",
-                "CursorX()"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Player",
-                "Flippable",
-                "yes"
-              ]
-            }
-          ]
+          "parameters": []
         }
       ],
       "parameters": []
