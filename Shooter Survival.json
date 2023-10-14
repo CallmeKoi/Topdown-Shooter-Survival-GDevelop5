@@ -538,6 +538,39 @@
       "name": "Equiped",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "chosenObj",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "randomValue",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Tier1",
+      "type": "array",
+      "children": [
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Imp"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Goblin"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Swampy"
+        }
+      ]
     }
   ],
   "layouts": [

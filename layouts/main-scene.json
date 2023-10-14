@@ -95,156 +95,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "f68440c7-c61a-4ff5-9958-8f55eb66ccfa",
-      "width": 0,
-      "x": -32,
-      "y": -32,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "be3833e3-9a3a-4d04-9ea7-9bf2b6081986",
-      "width": 0,
-      "x": 1312,
-      "y": -32,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "51e4feaa-9ca3-4b48-bde4-e2e39050669f",
-      "width": 0,
-      "x": 1312,
-      "y": 736,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "54f49f5d-eaa5-4497-abf5-d8471dc5db3b",
-      "width": 0,
-      "x": -32,
-      "y": 736,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "4872b0cb-c920-4258-b66a-a9497637d831",
-      "width": 0,
-      "x": 1312,
-      "y": 352,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "d38cd726-57b3-44ea-97e1-81f1905133ae",
-      "width": 0,
-      "x": -32,
-      "y": 352,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "13b61053-c979-408f-812a-de8008b90131",
-      "width": 0,
-      "x": 384,
-      "y": -32,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "25281baf-7fb3-4aa9-a852-798013199429",
-      "width": 0,
-      "x": 864,
-      "y": -32,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "c71d1820-125a-40e2-bc02-f16e29b75fc2",
-      "width": 0,
-      "x": 400,
-      "y": 736,
-      "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Layer",
-      "name": "Spawner",
-      "persistentUuid": "a5a5736f-bd69-4842-a430-0aa571d22a36",
-      "width": 0,
-      "x": 880,
-      "y": 736,
-      "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -289,9 +139,9 @@
           "BulletSpeedVariance": 0
         },
         {
-          "ignoreDefaultControls": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "ignoreDefaultControls": true,
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -899,6 +749,9 @@
           "HealToBeApplied": 0
         },
         {
+          "maxSpeed": 25,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -908,170 +761,15 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 30,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 4
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Run",
           "useMultipleDirections": false,
@@ -1099,19 +797,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
                       }
                     ]
                   ]
@@ -1135,19 +833,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
                       }
                     ]
                   ]
@@ -1171,19 +869,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
                       }
                     ]
                   ]
@@ -1207,19 +905,175 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Imp_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Imp_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Imp_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Imp_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
                       }
                     ]
                   ]
@@ -1243,9 +1097,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 2,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 2,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -1269,6 +1123,9 @@
           "HealToBeApplied": 0
         },
         {
+          "maxSpeed": 20,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1278,170 +1135,15 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 35,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Run",
           "useMultipleDirections": false,
@@ -1469,19 +1171,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
                       }
                     ]
                   ]
@@ -1505,19 +1207,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
                       }
                     ]
                   ]
@@ -1541,19 +1243,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
                       }
                     ]
                   ]
@@ -1577,19 +1279,175 @@
                     [
                       {
                         "x": 4,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 5
                       },
                       {
                         "x": 14,
-                        "y": 16
+                        "y": 15
                       },
                       {
                         "x": 4,
-                        "y": 16
+                        "y": 15
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Goblin_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Goblin_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Goblin_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Goblin_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 9,
+                    "y": 10.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 4,
+                        "y": 15
                       }
                     ]
                   ]
@@ -1613,9 +1471,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 100,
+          "Health": 3,
           "CurrentHealth": 0,
-          "MaxHealth": 100,
+          "MaxHealth": 3,
           "DamageCooldown": 0,
           "IsHealthJustDamaged": false,
           "HealthRegenRate": 0,
@@ -1639,6 +1497,9 @@
           "HealToBeApplied": 0
         },
         {
+          "maxSpeed": 10,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1648,170 +1509,15 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 20,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8.5,
-                    "y": 9.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8.5,
-                    "y": 9.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8.5,
-                    "y": 9.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8.5,
-                    "y": 9.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Run",
           "useMultipleDirections": false,
@@ -1967,6 +1673,162 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8.5,
+                    "y": 9.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8.5,
+                    "y": 9.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8.5,
+                    "y": 9.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8.5,
+                    "y": 9.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2062,17 +1924,6 @@
               "parameters": [
                 "",
                 "2.5",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "1",
                 "",
                 ""
               ]
@@ -2454,6 +2305,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Gun",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2688,7 +2540,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Spawner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2718,7 +2569,6 @@
               ]
             },
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2728,46 +2578,7 @@
                   "parameters": [
                     "",
                     "\"Spawner\"",
-                    ">=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AjoutHasard"
-                  },
-                  "parameters": [
-                    "",
-                    "Spawner"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "Imp",
-                    "Spawner.X()",
-                    "Spawner.Y()",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Spawner\"",
-                    ">=",
+                    ">",
                     "2"
                   ]
                 }
@@ -2787,6 +2598,7 @@
                   "comment": "Spawn enemies outside of camera border"
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Repeat",
                   "repeatExpression": "3",
                   "conditions": [
@@ -2815,11 +2627,22 @@
                     },
                     {
                       "type": {
-                        "value": "ResetTimer"
+                        "value": "ModVarGlobal"
                       },
                       "parameters": [
-                        "",
-                        "\"Spawner\""
+                        "randomValue",
+                        "=",
+                        "Random(GlobalVariableChildCount(Tier1)-1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobalTxt"
+                      },
+                      "parameters": [
+                        "chosenObj",
+                        "=",
+                        "GlobalVariableString(Tier1[randomValue])"
                       ]
                     }
                   ],
@@ -2853,11 +2676,12 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Create"
+                            "value": "CreateByName"
                           },
                           "parameters": [
                             "",
-                            "Imp",
+                            "Enemies",
+                            "chosenObj",
                             "RandomInRange(CameraBorderLeft(\"\",0) - 150,CameraBorderRight(\"\",0)+150)",
                             "RandomInRange(CameraBorderTop(\"\",0),CameraBorderTop(\"\",0)-150)",
                             ""
@@ -2894,11 +2718,12 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Create"
+                            "value": "CreateByName"
                           },
                           "parameters": [
                             "",
-                            "Imp",
+                            "Enemies",
+                            "chosenObj",
                             "RandomInRange(CameraBorderLeft(\"\",0) - 150,CameraBorderLeft(\"\",0))",
                             "RandomInRange(CameraBorderTop(\"\",0),CameraBorderBottom(\"\",0))",
                             ""
@@ -2935,11 +2760,12 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Create"
+                            "value": "CreateByName"
                           },
                           "parameters": [
                             "",
-                            "Imp",
+                            "Enemies",
+                            "chosenObj",
                             "RandomInRange(CameraBorderRight(\"\",0),CameraBorderRight(\"\",0)+150)",
                             "RandomInRange(CameraBorderTop(\"\",0),CameraBorderBottom(\"\",0))",
                             ""
@@ -2976,16 +2802,32 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "Create"
+                            "value": "CreateByName"
                           },
                           "parameters": [
                             "",
-                            "Imp",
+                            "Enemies",
+                            "chosenObj",
                             "RandomInRange(CameraBorderLeft(\"\",0)-150,CameraBorderRight(\"\",0)+150)",
                             "RandomInRange(CameraBorderBottom(\"\",0),CameraBorderBottom(\"\",0)+150)",
                             ""
                           ]
                         }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Spawner\""
                       ]
                     }
                   ]
@@ -3000,6 +2842,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Behavior",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3189,38 +3032,6 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "UI",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 0.1,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Layer",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
