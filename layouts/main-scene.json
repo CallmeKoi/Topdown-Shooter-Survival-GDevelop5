@@ -79,6 +79,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -88,9 +90,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 100,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         }
       ],
