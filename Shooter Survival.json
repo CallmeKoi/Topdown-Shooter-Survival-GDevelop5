@@ -518,6 +518,15 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/0c5d85151daec5c1145f729bcc93d976228940f09b1a5e85b048eceed66e7f59_Swampy_Run_4.png",
           "name": "Swampy_Run_4.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Enemy_Spawn_Location.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enemy_Spawn_Location.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
