@@ -28,9 +28,9 @@
 1. Tiếp cận với công nghệ mới
 2. Chuẩn bị tài nguyên
 3. Xây dựng màn chơi chính
-4. Xây dựng theo tác cơ bản của nhân vật
+4. Xây dựng thao tác cơ bản của nhân vật
 5. Xây dựng kẻ địch
-6.  Xây dựng AI cho kẻ địch
+6. Xây dựng AI cho kẻ địch
 7. Thêm vũ khí vào trò chơi
 8. Xây dựng tính năng nhặt và bỏ vũ khí
 9. Xây dựng hệ thống tính số máu và đạn
@@ -48,9 +48,9 @@
 |---------|-------|-------|
 |    1    |  ✅  |  ✅  |
 |    2    |  ☑️  |  ☑️  |
-|    3    |  ❌  |  ❌  |
+|    3    |  ⭕  |  ❌  |
 |    4    |  ✅  |  ✅  |
-|    5    |  ❌  |  ❌  |
+|    5    |  ❌  |  ⭕  |
 |    6    |  ❌  |  ❌  |
 |    7    |  ❌  |  ❌  |
 |    8    |  ❌  |  ❌  |
