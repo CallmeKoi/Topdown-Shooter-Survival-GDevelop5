@@ -417,6 +417,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "Enemy_Spawn_Location.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enemy_Spawn_Location.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/Swampy_Idle_1.png",
         "kind": "image",
         "metadata": "",
@@ -430,7 +439,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Swampy_Idle_2.png",
+        "file": "assets/Swampy_Idle_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Swampy_Idle_2.png",
@@ -443,7 +452,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Swampy_Idle_3.png",
+        "file": "assets/Swampy_Idle_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Swampy_Idle_3.png",
@@ -456,7 +465,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Swampy_Idle_4.png",
+        "file": "assets/Swampy_Idle_7.png",
         "kind": "image",
         "metadata": "",
         "name": "Swampy_Idle_4.png",
@@ -469,7 +478,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Swampy_Run_1.png",
+        "file": "assets/Swampy_Run_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Swampy_Run_1.png",
@@ -482,7 +491,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Swampy_Run_2.png",
+        "file": "assets/Swampy_Run_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Swampy_Run_2.png",
@@ -495,7 +504,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Swampy_Run_3.png",
+        "file": "assets/Swampy_Run_7.png",
         "kind": "image",
         "metadata": "",
         "name": "Swampy_Run_3.png",
@@ -508,7 +517,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Swampy_Run_4.png",
+        "file": "assets/Swampy_Run_8.png",
         "kind": "image",
         "metadata": "",
         "name": "Swampy_Run_4.png",
@@ -521,11 +530,33 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Enemy_Spawn_Location.png",
+        "file": "assets/Imp_Hurt.png",
         "kind": "image",
         "metadata": "",
-        "name": "Enemy_Spawn_Location.png",
-        "smoothed": true,
+        "name": "Imp_Hurt.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Goblin_Hurt.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Goblin_Idle_5.png\",\"extension\":\".png\"}",
+        "name": "Goblin_Hurt.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/d936201183066b01ba1b886b5931b5ba3e3ebc8b829e841ccf707393997a1e1d_Goblin_Idle_1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Swampy_Hurt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Swampy_Hurt.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],
@@ -579,7 +610,16 @@
       "referenceTo": "/layouts/main-scene"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/enemy-spawn"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/enemy-behavior"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
