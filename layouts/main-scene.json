@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -30,6 +30,15 @@
         },
         {
           "name": "Gun"
+        },
+        {
+          "name": "Imp"
+        },
+        {
+          "name": "Goblin"
+        },
+        {
+          "name": "Swampy"
         }
       ]
     },
@@ -131,7 +140,44 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Health",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "mm_spd",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "currentXP",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "maxXP",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Level",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "levelUP",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -176,10 +222,12 @@
           "deceleration": 8000,
           "maxSpeed": 100,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -1786,158 +1834,68 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8,
-                    "y": 27.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 14
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 3
                       },
                       {
-                        "x": 15,
-                        "y": 8
+                        "x": 16,
+                        "y": 3
                       },
                       {
-                        "x": 15,
-                        "y": 28
+                        "x": 16,
+                        "y": 16
                       },
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 16
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Run_2.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
+                  "image": "Swampy_Idle_4.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8,
-                    "y": 27.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 14
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 3
                       },
                       {
-                        "x": 15,
-                        "y": 8
+                        "x": 16,
+                        "y": 3
                       },
                       {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Run_3.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
+                        "x": 16,
+                        "y": 16
                       },
                       {
                         "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Run_4.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
+                        "y": 16
                       }
                     ]
                   ]
@@ -1947,119 +1905,153 @@
           ]
         },
         {
-          "name": "Hit",
+          "name": "Run",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.025,
+              "timeBetweenFrames": 0.125,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Hit.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "fb540ae861b7ddaa64b46c86920d1aa207e95d611d0e4ce65394f2fff3b42c25",
-      "name": "Gun",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "Equiped",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Gun.png",
+                  "image": "Swampy_Run_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 3,
-                    "y": 5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 3,
-                    "y": 5
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": [
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 3
                       },
                       {
-                        "x": 14,
-                        "y": 0
+                        "x": 16,
+                        "y": 3
                       },
                       {
-                        "x": 14,
-                        "y": 8
+                        "x": 16,
+                        "y": 16
                       },
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Run_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Run_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Run_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
                       }
                     ]
                   ]
@@ -2129,6 +2121,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2139,10 +2133,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -2471,6 +2463,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2481,10 +2475,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -2856,22 +2848,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "Objects",
-                "=",
-                "Objects.Y()"
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
@@ -2890,6 +2866,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Movements",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3234,18 +3211,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Make Gun attached to Player and points to cursor"
-            },
-            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3267,11 +3232,23 @@
                   "parameters": [
                     "Gun",
                     "=",
-                    "Player.ZOrder()+1"
+                    "Player.ZOrder()+10"
                   ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Make Gun attached to Player and points to cursor"
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
@@ -3531,6 +3508,38 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -3541,6 +3550,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flippable",
@@ -3569,6 +3582,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "YSort",
+      "type": "YSort::YSort"
     }
   ]
 }
