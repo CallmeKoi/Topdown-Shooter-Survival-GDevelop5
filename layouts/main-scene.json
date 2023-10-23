@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -30,18 +30,21 @@
         },
         {
           "name": "Gun"
+        },
+        {
+          "name": "Swampy"
+        },
+        {
+          "name": "Chort"
+        },
+        {
+          "name": "OrcWarrior"
         }
       ]
     },
     {
       "name": "Enemies",
       "objects": [
-        {
-          "name": "Imp"
-        },
-        {
-          "name": "Goblin"
-        },
         {
           "name": "Swampy"
         },
@@ -57,10 +60,10 @@
       "name": "Tier1",
       "objects": [
         {
-          "name": "Imp"
+          "name": "Chort"
         },
         {
-          "name": "Goblin"
+          "name": "OrcWarrior"
         },
         {
           "name": "Swampy"
@@ -69,14 +72,7 @@
     },
     {
       "name": "Tier2",
-      "objects": [
-        {
-          "name": "Chort"
-        },
-        {
-          "name": "OrcWarrior"
-        }
-      ]
+      "objects": []
     },
     {
       "name": "Tier3",
@@ -131,7 +127,44 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Health",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "mm_spd",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "currentXP",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "maxXP",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Level",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "levelUP",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -165,6 +198,14 @@
           "BulletSpeedVariance": 0
         },
         {
+          "name": "FlashEffect",
+          "type": "Flash::FlashEffect",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "EffectName": ""
+        },
+        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "ignoreDefaultControls": true,
@@ -176,10 +217,12 @@
           "deceleration": 8000,
           "maxSpeed": 100,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -675,912 +718,6 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "7cfcff2bade8747074155f7ff18d9183fd5019215266dc813aec562f9e7db55d",
-      "name": "Bullet",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Bullet.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 10,
-                    "y": 9
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 7.5,
-                    "y": 9
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 5,
-                        "y": 7
-                      },
-                      {
-                        "x": 10,
-                        "y": 7
-                      },
-                      {
-                        "x": 10,
-                        "y": 11
-                      },
-                      {
-                        "x": 5,
-                        "y": 11
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "cbc9392243b41177805844372b79d9a2958d24598fa55710c78205bd2a3f0064",
-      "name": "Imp",
-      "tags": "Enemy",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 1,
-          "CurrentHealth": 0,
-          "MaxHealth": 1,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "maxSpeed": 25,
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 32,
-          "cellWidth": 32,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "YSort",
-          "type": "YSort::YSort"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Run",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Run_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Run_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Run_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Run_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hurt",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Imp_Hurt.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 3
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "203023d32a1c3586a7d11caa7bd1d56d248d4814f971319493fef3a6e6b29acb",
-      "name": "Goblin",
-      "tags": "Enemy",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 1,
-          "CurrentHealth": 0,
-          "MaxHealth": 1,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "cellHeight": 32,
-          "cellWidth": 32,
-          "maxSpeed": 20,
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "YSort",
-          "type": "YSort::YSort"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Run",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Run_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Run_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Run_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Run_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hurt",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Goblin_Hurt.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 9,
-                    "y": 10.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 5
-                      },
-                      {
-                        "x": 14,
-                        "y": 15
-                      },
-                      {
-                        "x": 4,
-                        "y": 15
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Spawner",
       "tags": "",
@@ -1642,484 +779,6 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "2e3f7a2e4c18aa0424ca88a105df43b5c2982b7e94c4db29367f35f249f04e0f",
-      "name": "Swampy",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Health",
-          "type": "Health::Health",
-          "Health": 2,
-          "CurrentHealth": 0,
-          "MaxHealth": 2,
-          "DamageCooldown": 0,
-          "IsHealthJustDamaged": false,
-          "HealthRegenRate": 0,
-          "HealthRegenDelay": 0,
-          "AllowOverHealing": false,
-          "HitAtLeastOnce": false,
-          "IsJustHealed": false,
-          "CurrentShieldPoints": 0,
-          "MaxShieldPoints": 0,
-          "ShieldDuration": 5,
-          "ShieldRegenRate": 0,
-          "BlockExcessDamage": false,
-          "ShieldRegenDelay": 0,
-          "IsShieldJustDamaged": false,
-          "ChanceToDodge": 0,
-          "DamageToBeApplied": 0,
-          "FlatDamageReduction": 0,
-          "PercentDamageReduction": 0,
-          "IsJustDodged": false,
-          "ShieldDamageTaken": 0,
-          "HealToBeApplied": 0
-        },
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 32,
-          "cellWidth": 32,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 10,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        },
-        {
-          "name": "YSort",
-          "type": "YSort::YSort"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Run_2.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Run_3.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Run_4.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hit",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Knight Female_Hit.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "fb540ae861b7ddaa64b46c86920d1aa207e95d611d0e4ce65394f2fff3b42c25",
-      "name": "Gun",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "Equiped",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Gun.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 3,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 3,
-                    "y": 5
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 14,
-                        "y": 0
-                      },
-                      {
-                        "x": 14,
-                        "y": 8
-                      },
-                      {
-                        "x": 0,
-                        "y": 8
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hurt",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Swampy_Hurt.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 3
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "470d466247528bde5e8591d415e98d3942c8d9f20bc2de72746b8323af6f9446",
       "name": "Chort",
       "tags": "",
@@ -2129,6 +788,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2139,10 +800,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -2471,6 +1130,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2481,10 +1142,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 200,
-          "name": "Pathfinding",
           "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         }
       ],
       "animations": [
@@ -2801,6 +1460,409 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "7cfcff2bade8747074155f7ff18d9183fd5019215266dc813aec562f9e7db55d",
+      "name": "Bullet",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bullet.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 7
+                      },
+                      {
+                        "x": 10,
+                        "y": 7
+                      },
+                      {
+                        "x": 10,
+                        "y": 11
+                      },
+                      {
+                        "x": 5,
+                        "y": 11
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "2e3f7a2e4c18aa0424ca88a105df43b5c2982b7e94c4db29367f35f249f04e0f",
+      "name": "Swampy",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Run_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Run_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Run_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Swampy_Run_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -2856,22 +1918,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "Objects",
-                "=",
-                "Objects.Y()"
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
@@ -2890,6 +1936,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Movements",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3234,18 +2281,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Make Gun attached to Player and points to cursor"
-            },
-            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3267,11 +2302,23 @@
                   "parameters": [
                     "Gun",
                     "=",
-                    "Player.ZOrder()+1"
+                    "Player.ZOrder()+10"
                   ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Make Gun attached to Player and points to cursor"
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
@@ -3531,6 +2578,38 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -3543,12 +2622,16 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
-      "name": "Flippable",
-      "type": "FlippableCapability::FlippableBehavior"
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
-      "name": "Health",
-      "type": "Health::Health"
+      "name": "FlashEffect",
+      "type": "Flash::FlashEffect"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
     },
     {
       "name": "Opacity",
@@ -3569,6 +2652,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "YSort",
+      "type": "YSort::YSort"
     }
   ]
 }
