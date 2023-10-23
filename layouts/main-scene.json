@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6455105703311492,
+    "zoomFactor": 0.49508400737488995,
     "windowMask": false
   },
   "objectsGroups": [
@@ -44,8 +44,43 @@
         },
         {
           "name": "Swampy"
+        },
+        {
+          "name": "Chort"
+        },
+        {
+          "name": "OrcWarrior"
         }
       ]
+    },
+    {
+      "name": "Tier1",
+      "objects": [
+        {
+          "name": "Imp"
+        },
+        {
+          "name": "Goblin"
+        },
+        {
+          "name": "Swampy"
+        }
+      ]
+    },
+    {
+      "name": "Tier2",
+      "objects": [
+        {
+          "name": "Chort"
+        },
+        {
+          "name": "OrcWarrior"
+        }
+      ]
+    },
+    {
+      "name": "Tier3",
+      "objects": []
     }
   ],
   "variables": [
@@ -1160,11 +1195,11 @@
           "HealToBeApplied": 0
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "cellHeight": 32,
           "cellWidth": 32,
           "maxSpeed": 20,
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1644,6 +1679,8 @@
           "HealToBeApplied": 0
         },
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1654,10 +1691,8 @@
           "gridOffsetX": 0,
           "gridOffsetY": 0,
           "maxSpeed": 10,
-          "name": "Pathfinding",
           "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         },
         {
           "name": "YSort",
@@ -2073,6 +2108,690 @@
                       {
                         "x": 0,
                         "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "470d466247528bde5e8591d415e98d3942c8d9f20bc2de72746b8323af6f9446",
+      "name": "Chort",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Run_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Run_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Run_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Run_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 6
+                      },
+                      {
+                        "x": 14,
+                        "y": 24
+                      },
+                      {
+                        "x": 3,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "4d010ca4f1eef38cfa242c6d206ca43c5617b7fcc8e67879471a610f4a0b312f",
+      "name": "OrcWarrior",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Run_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Run_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Run_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Run_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 4
+                      },
+                      {
+                        "x": 15,
+                        "y": 20
+                      },
+                      {
+                        "x": 4,
+                        "y": 20
                       }
                     ]
                   ]
@@ -2730,55 +3449,6 @@
                       "parameters": [
                         "Bullet",
                         ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "Animation",
-                        "=",
-                        "\"Hurt\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "Animation",
-                        "=",
-                        "\"Hurt\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "Animation"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Enemies",
-                        "Animation",
-                        "=",
-                        "\"Run\""
                       ]
                     }
                   ]
