@@ -196,6 +196,223 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "Enemy_Spawn_Location.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enemy_Spawn_Location.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/8c792e7461d999344df8f8e1b007f908111fa08fb9a5e9c1c4bcdfbca4bfd090_Chort_Idle_1.png",
+          "name": "Chort_Idle_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/369c211e090abca710118994f09d1ab7619860109e19c886f6731ca380d6dd30_Chort_Idle_2.png",
+          "name": "Chort_Idle_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/9ecf22b95c2fdc74082784edfed56863f55dfb8b7dca73a3194c865d95e000c8_Chort_Idle_3.png",
+          "name": "Chort_Idle_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/cf8db9db7653de530e45a7d32e619194f1543ea10405594b9073d10c49799047_Chort_Idle_4.png",
+          "name": "Chort_Idle_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Run_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/5201416af1d399ffbab822369d542083fc02ff1714f06862a8165cb2a8ce2e23_Chort_Run_1.png",
+          "name": "Chort_Run_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Run_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/95ca3052af1d2d781b7fc5128c27a7ca48992b4c051430d71701beadf795131b_Chort_Run_2.png",
+          "name": "Chort_Run_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Run_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/e908e983bf2587cff370d2a48e0bea72bf0ef99d4ffa7d0364240cd26743d8c0_Chort_Run_3.png",
+          "name": "Chort_Run_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Chort_Run_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/f7801a81d8896119771af8961ddd2427366e7be1e92c442ee981760e91fccae1_Chort_Run_4.png",
+          "name": "Chort_Run_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/9b255583244aeb813ae954fdce7eb69b25184c0ee8d4ca986c5bdc1ac42b4203_Orc Warrior_Idle_1.png",
+          "name": "Orc Warrior_Idle_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/1d19dd7dd1c302a9ae39795d6535bd94a5c3e6857f06a81f1669e3f5b73bc963_Orc Warrior_Idle_2.png",
+          "name": "Orc Warrior_Idle_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/cc3b92f92ea05960c376f87acffc9d2976c48e1815ad298c9dcf41a97883227e_Orc Warrior_Idle_3.png",
+          "name": "Orc Warrior_Idle_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/235aaf7f5af0c2d1fd82ffef27ff5cb5cbe774b61287a9d7875618a9cadb0ea7_Orc Warrior_Idle_4.png",
+          "name": "Orc Warrior_Idle_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Run_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/e6bc0ac5a432b6db1ee2a8baa392db2e1950a11949aaebe556085f67d44ac739_Orc Warrior_Run_1.png",
+          "name": "Orc Warrior_Run_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Run_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/0cc5c2cb6c93effa2be10a234f1a9a45327665da878f9c18ee107cda9a807b88_Orc Warrior_Run_2.png",
+          "name": "Orc Warrior_Run_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Run_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/6381a787145098ae73539bcda6edc5940791164ed738926af427d3de74c34136_Orc Warrior_Run_3.png",
+          "name": "Orc Warrior_Run_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orc Warrior_Run_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/ddd4028428884ca4f4cdc7ac471b80d2c7326dae77b9bae1498b8958e94f9058_Orc Warrior_Run_4.png",
+          "name": "Orc Warrior_Run_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/Bullet.png",
         "kind": "image",
         "metadata": "",
@@ -205,214 +422,6 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 4/Agent Mike/5cb7c240d55e97c18f6f1da41d1c379049db6799daacaf3cf06ff99b1909feaf_Bullet.png",
           "name": "Bullet.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/2f70758dbed6145e33f1f880ddc2201b429fcc47833d3a20e2472d35a17ec8d1_Imp_Idle_1.png",
-          "name": "Imp_Idle_1.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/b3ac3cb6b5d9d9131604586e92ab71100a6f2bd6e4ec6522480d6b6430e81041_Imp_Idle_2.png",
-          "name": "Imp_Idle_2.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/4de2de964e0b5a3774f1d9553e4b6f39533ad4f01583c02dd42dc2c9a5935a39_Imp_Idle_3.png",
-          "name": "Imp_Idle_3.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/b3ac3cb6b5d9d9131604586e92ab71100a6f2bd6e4ec6522480d6b6430e81041_Imp_Idle_4.png",
-          "name": "Imp_Idle_4.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Run_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Run_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/05102c1f0d22545b6dd0616d8485de556e8aeebf59a447ae614a8ddfd5300458_Imp_Run_1.png",
-          "name": "Imp_Run_1.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Run_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Run_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/0a130324cd2501a97027b518b41231896a81e25034fd3a7baaca9581d079f8b6_Imp_Run_2.png",
-          "name": "Imp_Run_2.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Run_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Run_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/2ae8c6d20d3609de8fd964141318794bd92b37a011823da7c46f15e78af59bde_Imp_Run_3.png",
-          "name": "Imp_Run_3.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Imp_Run_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Imp_Run_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/12e5a084afa3ba2ee3fd00d42f0f46d2cc73e448ce9b24dc3a280042b41e1c0e_Imp_Run_4.png",
-          "name": "Imp_Run_4.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/d936201183066b01ba1b886b5931b5ba3e3ebc8b829e841ccf707393997a1e1d_Goblin_Idle_1.png",
-          "name": "Goblin_Idle_1.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/c42b5aab579d604dcb18052c8ab434e38bf9895178e7d3bb6f539c1def565a50_Goblin_Idle_2.png",
-          "name": "Goblin_Idle_2.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/34c934b31e5fda149b8c98f77fba1bf8b998856d40c79abb83c05de2dc12c5a1_Goblin_Idle_3.png",
-          "name": "Goblin_Idle_3.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/c42b5aab579d604dcb18052c8ab434e38bf9895178e7d3bb6f539c1def565a50_Goblin_Idle_4.png",
-          "name": "Goblin_Idle_4.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Run_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Run_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/628205067f4ecde265255929d173ab0c21146d753356f6b5b74ab38d327e82e3_Goblin_Run_1.png",
-          "name": "Goblin_Run_1.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Run_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Run_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/2a898737af6791c6cd6e4d2bf6b6779a21b2df4fad2f4a220cb9afd14cacaa16_Goblin_Run_2.png",
-          "name": "Goblin_Run_2.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Run_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Run_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/391011a5edc2bb9b077cd6e8c31f09f94cc677a7898c9465b52dc19dade5f3f0_Goblin_Run_3.png",
-          "name": "Goblin_Run_3.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Goblin_Run_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Goblin_Run_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/c0bb4b02e508113a6adc29297b79a2dbceb07780d93ccbcf3016672e84005819_Goblin_Run_4.png",
-          "name": "Goblin_Run_4.png"
         }
       },
       {
@@ -529,6 +538,39 @@
       "name": "Equiped",
       "type": "boolean",
       "value": false
+    },
+    {
+      "folded": true,
+      "name": "chosenObj",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "randomValue",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Tier1",
+      "type": "array",
+      "children": [
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Imp"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Goblin"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Swampy"
+        }
+      ]
     }
   ],
   "layouts": [
@@ -537,8 +579,25 @@
       "referenceTo": "/layouts/main-scene"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/enemy-spawn"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/enemy-behavior"
+    }
+  ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/ysort"
