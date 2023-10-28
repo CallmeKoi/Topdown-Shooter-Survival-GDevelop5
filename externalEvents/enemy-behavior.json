@@ -50,8 +50,8 @@
                 "Enemies",
                 "Pathfinding",
                 "",
-                "Player1.BoundingBoxCenterX()",
-                "Player1.BoundingBoxCenterY()"
+                "Player.X()",
+                "Player.Y()"
               ]
             }
           ]
@@ -120,44 +120,6 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Is Dead"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "Enemies",
-                "Health",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Enemies",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
           "comment": "Is Hurt"
         },
         {
@@ -172,6 +134,12 @@
                 "Health",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -191,17 +159,6 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Enemies",
-                "Animation",
-                "=",
-                "\"Hurt\""
-              ]
-            },
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
@@ -222,6 +179,46 @@
                 "Animation",
                 "=",
                 "\"Run\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Is Dead"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    ""
+                  ]
+                }
               ]
             }
           ]

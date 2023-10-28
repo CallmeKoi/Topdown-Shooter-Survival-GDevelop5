@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5843784410740956,
+    "zoomFactor": 0.5117784035210193,
     "windowMask": false
   },
   "objectsGroups": [
@@ -35,10 +35,13 @@
           "name": "Swampy"
         },
         {
-          "name": "Chort"
+          "name": "Imp"
         },
         {
-          "name": "OrcWarrior"
+          "name": "Orc"
+        },
+        {
+          "name": "Player2"
         }
       ]
     },
@@ -49,10 +52,10 @@
           "name": "Swampy"
         },
         {
-          "name": "Chort"
+          "name": "Imp"
         },
         {
-          "name": "OrcWarrior"
+          "name": "Orc"
         }
       ]
     },
@@ -60,10 +63,10 @@
       "name": "Tier1",
       "objects": [
         {
-          "name": "Chort"
+          "name": "Imp"
         },
         {
-          "name": "OrcWarrior"
+          "name": "Orc"
         },
         {
           "name": "Swampy"
@@ -101,16 +104,45 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 28,
-      "layer": "",
-      "name": "Player1",
-      "persistentUuid": "681688a5-3b19-4e6e-9cda-613e52a48d00",
-      "width": 16,
-      "x": 642,
-      "y": 331,
-      "zOrder": 2,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Ammo_Qty",
+      "persistentUuid": "c509f2d8-be92-4023-bc6f-fd083549c395",
+      "width": 0,
+      "x": 24,
+      "y": 128,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "ShotsUntilReload",
+      "persistentUuid": "7a91e5aa-e55d-497a-aa85-a532f95103a5",
+      "width": 0,
+      "x": 22,
+      "y": 192,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Health",
+      "persistentUuid": "033caa88-95ee-450d-b214-203ca07df611",
+      "width": 0,
+      "x": 24,
+      "y": 64,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -121,26 +153,11 @@
       "height": 0,
       "layer": "",
       "name": "Gun",
-      "persistentUuid": "99b4da72-aaa7-4230-8097-52220e835874",
+      "persistentUuid": "2451f8b2-d5fb-43d3-a1d0-3b135412cc27",
       "width": 0,
-      "x": 685,
-      "y": 325,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Background",
-      "persistentUuid": "83d88980-7eb6-45fe-8268-3d455aad131d",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 1,
+      "x": 608,
+      "y": 288,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -155,12 +172,6 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
-        {
-          "folded": true,
-          "name": "Health",
-          "type": "string",
-          "value": ""
-        },
         {
           "folded": true,
           "name": "mm_spd",
@@ -206,13 +217,13 @@
           "AmmoQuantity": 0,
           "ShotsPerReload": 6,
           "ReloadDuration": 2,
-          "MaxAmmo": 6,
+          "MaxAmmo": 100,
           "ShotsBeforeNextReload": 0,
           "TotalShotsFired": 0,
           "TotalBulletsCreated": 0,
-          "StartingAmmo": 0,
+          "StartingAmmo": 100,
           "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
+          "UnlimitedAmmo": false,
           "ReloadInProgress": false,
           "HeatIncreasePerShot": 0,
           "HeatLevel": 0,
@@ -225,12 +236,39 @@
           "BulletSpeedVariance": 0
         },
         {
-          "name": "FlashEffect",
-          "type": "Flash::FlashEffect",
+          "name": "Flash",
+          "type": "Flash::Flash",
           "HalfPeriodTime": 0.1,
           "IsFlashing": false,
-          "FlashDuration": 0,
-          "EffectName": ""
+          "FlashDuration": 0
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 10,
+          "CurrentHealth": 0,
+          "MaxHealth": 10,
+          "DamageCooldown": 1.5,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
         },
         {
           "name": "TopDownMovement",
@@ -728,13 +766,13 @@
           "AmmoQuantity": 0,
           "ShotsPerReload": 6,
           "ReloadDuration": 2,
-          "MaxAmmo": 6,
+          "MaxAmmo": 100,
           "ShotsBeforeNextReload": 0,
           "TotalShotsFired": 0,
           "TotalBulletsCreated": 0,
-          "StartingAmmo": 0,
+          "StartingAmmo": 100,
           "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
+          "UnlimitedAmmo": false,
           "ReloadInProgress": false,
           "HeatIncreasePerShot": 0,
           "HeatLevel": 0,
@@ -747,12 +785,39 @@
           "BulletSpeedVariance": 0
         },
         {
-          "name": "FlashEffect",
-          "type": "Flash::FlashEffect",
+          "name": "Flash",
+          "type": "Flash::Flash",
           "HalfPeriodTime": 0.1,
           "IsFlashing": false,
-          "FlashDuration": 0,
-          "EffectName": ""
+          "FlashDuration": 0
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 10,
+          "CurrentHealth": 0,
+          "MaxHealth": 10,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
         },
         {
           "name": "TopDownMovement",
@@ -956,7 +1021,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "Run",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1178,7 +1243,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "Hit",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1267,6 +1332,11 @@
                       "name": "Shoot",
                       "x": 13.5,
                       "y": 2.5
+                    },
+                    {
+                      "name": "Prompt",
+                      "x": 7.5,
+                      "y": 0
                     }
                   ],
                   "originPoint": {
@@ -1371,7 +1441,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "470d466247528bde5e8591d415e98d3942c8d9f20bc2de72746b8323af6f9446",
-      "name": "Chort",
+      "name": "Imp",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1379,179 +1449,63 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 2,
+          "CurrentHealth": 0,
+          "MaxHealth": 2,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
+        },
+        {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "cellHeight": 32,
+          "cellWidth": 32,
+          "maxSpeed": 12,
+          "rotateObject": false,
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "rotateObject": true,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chort_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 24
-                      },
-                      {
-                        "x": 3,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chort_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 24
-                      },
-                      {
-                        "x": 3,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chort_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 24
-                      },
-                      {
-                        "x": 3,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Chort_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 6
-                      },
-                      {
-                        "x": 14,
-                        "y": 24
-                      },
-                      {
-                        "x": 3,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Run",
           "useMultipleDirections": false,
@@ -1566,8 +1520,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 22.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1579,19 +1533,19 @@
                     [
                       {
                         "x": 3,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 24
+                        "y": 23
                       },
                       {
                         "x": 3,
-                        "y": 24
+                        "y": 23
                       }
                     ]
                   ]
@@ -1602,8 +1556,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 22.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1615,19 +1569,19 @@
                     [
                       {
                         "x": 3,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 24
+                        "y": 23
                       },
                       {
                         "x": 3,
-                        "y": 24
+                        "y": 23
                       }
                     ]
                   ]
@@ -1638,8 +1592,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 22.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1651,19 +1605,19 @@
                     [
                       {
                         "x": 3,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 24
+                        "y": 23
                       },
                       {
                         "x": 3,
-                        "y": 24
+                        "y": 23
                       }
                     ]
                   ]
@@ -1674,8 +1628,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 22.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1687,19 +1641,224 @@
                     [
                       {
                         "x": 3,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 6
+                        "y": 3
                       },
                       {
                         "x": 14,
-                        "y": 24
+                        "y": 23
                       },
                       {
                         "x": 3,
-                        "y": 24
+                        "y": 23
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 22.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 23
+                      },
+                      {
+                        "x": 3,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 22.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 23
+                      },
+                      {
+                        "x": 3,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 22.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 23
+                      },
+                      {
+                        "x": 3,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Chort_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 22.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 23
+                      },
+                      {
+                        "x": 3,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hurt",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Imp_Hurt_1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 22.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 3
+                      },
+                      {
+                        "x": 14,
+                        "y": 23
+                      },
+                      {
+                        "x": 3,
+                        "y": 23
                       }
                     ]
                   ]
@@ -1713,7 +1872,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "4d010ca4f1eef38cfa242c6d206ca43c5617b7fcc8e67879471a610f4a0b312f",
-      "name": "OrcWarrior",
+      "name": "Orc",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1721,179 +1880,63 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 2,
+          "CurrentHealth": 0,
+          "MaxHealth": 2,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
+        },
+        {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "cellHeight": 32,
+          "cellWidth": 32,
+          "maxSpeed": 10,
+          "rotateObject": false,
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "rotateObject": true,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Orc Warrior_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 20
-                      },
-                      {
-                        "x": 4,
-                        "y": 20
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Orc Warrior_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 20
-                      },
-                      {
-                        "x": 4,
-                        "y": 20
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Orc Warrior_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 20
-                      },
-                      {
-                        "x": 4,
-                        "y": 20
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Orc Warrior_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 4
-                      },
-                      {
-                        "x": 15,
-                        "y": 20
-                      },
-                      {
-                        "x": 4,
-                        "y": 20
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Run",
           "useMultipleDirections": false,
@@ -1908,8 +1951,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 19
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1921,19 +1964,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 20
+                        "y": 19
                       },
                       {
                         "x": 4,
-                        "y": 20
+                        "y": 19
                       }
                     ]
                   ]
@@ -1944,8 +1987,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 19
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1957,19 +2000,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 20
+                        "y": 19
                       },
                       {
                         "x": 4,
-                        "y": 20
+                        "y": 19
                       }
                     ]
                   ]
@@ -1980,8 +2023,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 19
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1993,19 +2036,19 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 20
+                        "y": 19
                       },
                       {
                         "x": 4,
-                        "y": 20
+                        "y": 19
                       }
                     ]
                   ]
@@ -2016,8 +2059,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 19
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2029,19 +2072,224 @@
                     [
                       {
                         "x": 4,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 4
+                        "y": 3
                       },
                       {
                         "x": 15,
-                        "y": 20
+                        "y": 19
                       },
                       {
                         "x": 4,
-                        "y": 20
+                        "y": 19
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 19
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 19
+                      },
+                      {
+                        "x": 4,
+                        "y": 19
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 19
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 19
+                      },
+                      {
+                        "x": 4,
+                        "y": 19
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 19
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 19
+                      },
+                      {
+                        "x": 4,
+                        "y": 19
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc Warrior_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 19
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 19
+                      },
+                      {
+                        "x": 4,
+                        "y": 19
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hurt",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Orc_Hurt_1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 19
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 3
+                      },
+                      {
+                        "x": 15,
+                        "y": 19
+                      },
+                      {
+                        "x": 4,
+                        "y": 19
                       }
                     ]
                   ]
@@ -2077,8 +2325,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 6,
+                    "y": 9
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2124,20 +2372,60 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
+        },
+        {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "cellHeight": 32,
+          "cellWidth": 32,
+          "maxSpeed": 8,
+          "rotateObject": false,
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "rotateObject": true,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
         }
       ],
       "animations": [
@@ -2155,8 +2443,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2191,8 +2479,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2227,8 +2515,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2263,8 +2551,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2311,8 +2599,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2347,8 +2635,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2383,8 +2671,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2419,8 +2707,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -2445,6 +2733,204 @@
                       {
                         "x": 0,
                         "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hurt",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Swampy_Hurt.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 15.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 3
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Ammo_Qty",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Ammo: ",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ShotsUntilReload",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Shots Until Reload: ",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Health",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Health: ",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Instruction",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Press",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Button",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\tile_0359.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 14.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 1
+                      },
+                      {
+                        "x": 14,
+                        "y": 15
+                      },
+                      {
+                        "x": 1,
+                        "y": 15
                       }
                     ]
                   ]
@@ -2575,19 +3061,9 @@
                   "parameters": [
                     "",
                     "Player1",
-                    "Background.CenterX()",
-                    "Background.CenterY()",
+                    "CameraCenterX()",
+                    "CameraCenterY()",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Player1",
-                    "=",
-                    "10"
                   ]
                 }
               ]
@@ -2614,19 +3090,37 @@
                   "parameters": [
                     "",
                     "Player2",
-                    "Background.CenterX()",
-                    "Background.CenterY()",
+                    "CameraCenterX()",
+                    "CameraCenterY()",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Gun",
+                    "693",
+                    "349",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "ChangePlan"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
-                    "Player2",
-                    "=",
-                    "10"
+                    "Gun",
+                    "Equiped",
+                    ""
                   ]
                 }
               ]
@@ -2650,6 +3144,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
@@ -2668,7 +3167,8 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Movements",
+          "folded": true,
+          "name": "Movements Control",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2928,76 +3428,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Show dialog when close to weapon\nPress E to equip weapon"
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Distance"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Gun",
-                    "20",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "e"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Gun",
-                        "=",
-                        "Player1.PointX(\"Hand\")",
-                        "=",
-                        "Player1.PointY(\"Hand\")"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "Gun",
-                        "Equiped",
-                        "True"
-                      ]
-                    }
-                  ]
-                }
-              ]
             }
           ],
           "parameters": []
@@ -3012,6 +3442,205 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Show instruction when close to weapon\nPress E to equip weapon"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Gun",
+                    "Equiped",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Gun",
+                        "20",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Button",
+                        "Gun.PointX(\"Prompt\")",
+                        "Gun.PointY(\"Prompt\") - 10",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "Button",
+                        "Gun"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Gun",
+                        "20",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "Gun",
+                        "Button",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Button",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "e"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Gun",
+                        "20",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "Gun",
+                        "Button",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Button",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Gun",
+                            "=",
+                            "Player.PointX(\"Hand\")",
+                            "=",
+                            "Player.PointY(\"Hand\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Gun",
+                            "Equiped",
+                            "True"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3033,7 +3662,7 @@
                   "parameters": [
                     "Gun",
                     "=",
-                    "Player1.ZOrder() + 10"
+                    "Player.ZOrder() + 10"
                   ]
                 }
               ],
@@ -3061,9 +3690,9 @@
                       "parameters": [
                         "Gun",
                         "=",
-                        "Player1.PointX(\"Hand\")",
+                        "Player.PointX(\"Hand\")",
                         "=",
-                        "Player1.PointY(\"Hand\")"
+                        "Player.PointY(\"Hand\")"
                       ]
                     },
                     {
@@ -3162,7 +3791,7 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "FireBullet::FireBullet::Fire"
                       },
                       "parameters": [
                         "Player",
@@ -3170,10 +3799,9 @@
                         "Gun.PointX(\"Shoot\")",
                         "Gun.PointY(\"Shoot\")",
                         "Bullet",
-                        "CursorX()",
-                        "CursorY()",
-                        "250",
-                        ""
+                        "Gun.Angle()",
+                        "300",
+                        "250"
                       ]
                     }
                   ]
@@ -3235,6 +3863,78 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Player is hit",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Enemies",
+                    "=",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Flash::Flash::IsFlashing"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flash",
+                    "Player.Health::DamageCooldownDuration()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "1",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "parameters": []
@@ -3244,6 +3944,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Enemy",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3266,9 +3967,82 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "UI",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Update Ammo"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Ammo_Qty",
+                "=",
+                "\"Ammo: \" + ToString(Player.FireBullet::AmmoQuantity())"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ShotsUntilReload",
+                "=",
+                "\"Shots Until Reload: \" + ToString(Player.FireBullet::ShotsBeforeNextReload())"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Update Health"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "\"Health: \" + ToString(Player.Health::Health())"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -3362,12 +4136,20 @@
       "type": "FireBullet::FireBullet"
     },
     {
-      "name": "FlashEffect",
-      "type": "Flash::FlashEffect"
+      "name": "Flash",
+      "type": "Flash::Flash"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
     },
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Health",
+      "type": "Health::Health"
     },
     {
       "name": "Opacity",
@@ -3376,10 +4158,6 @@
     {
       "name": "Pathfinding",
       "type": "PathfindingBehavior::PathfindingBehavior"
-    },
-    {
-      "name": "PlatformerObject",
-      "type": "PlatformBehavior::PlatformerObjectBehavior"
     },
     {
       "name": "Resizable",

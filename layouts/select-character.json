@@ -669,16 +669,6 @@
       "actions": [
         {
           "type": {
-            "value": "SetFullScreen"
-          },
-          "parameters": [
-            "",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [
@@ -874,11 +864,12 @@
       "actions": [
         {
           "type": {
-            "value": "PushScene"
+            "value": "Scene"
           },
           "parameters": [
             "",
-            "\"Main Scene\""
+            "\"Main Scene\"",
+            ""
           ]
         }
       ]
