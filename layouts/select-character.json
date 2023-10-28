@@ -864,11 +864,12 @@
       "actions": [
         {
           "type": {
-            "value": "PushScene"
+            "value": "Scene"
           },
           "parameters": [
             "",
-            "\"Main Scene\""
+            "\"Main Scene\"",
+            ""
           ]
         }
       ]

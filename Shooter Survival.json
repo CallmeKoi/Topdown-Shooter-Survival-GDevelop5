@@ -696,7 +696,7 @@
         "kind": "image",
         "metadata": "",
         "name": "e74a9d26210312281ffdf8ec19afffda13d70d925aaac0d55b40826fdf8db234_Elf Female_Hit.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true,
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/e74a9d26210312281ffdf8ec19afffda13d70d925aaac0d55b40826fdf8db234_Elf Female_Hit.png",
@@ -709,7 +709,7 @@
         "kind": "image",
         "metadata": "",
         "name": "5e23cab987447a6985fb0f1ffbd17b65fa63675f975a809402835f135742346d_Elf Male_Run_4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true,
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/5e23cab987447a6985fb0f1ffbd17b65fa63675f975a809402835f135742346d_Elf Male_Run_4.png",
@@ -722,7 +722,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -740,7 +740,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -749,7 +749,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Idle_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -758,7 +758,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Idle_4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -767,7 +767,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Run_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -776,7 +776,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Run_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -785,7 +785,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Run_3.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -794,7 +794,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Run_4.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -803,7 +803,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Run_5.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -812,7 +812,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Hit.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {

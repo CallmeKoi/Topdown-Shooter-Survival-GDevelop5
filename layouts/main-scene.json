@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0973679695629532,
+    "zoomFactor": 0.5117784035210193,
     "windowMask": false
   },
   "objectsGroups": [
@@ -39,6 +39,9 @@
         },
         {
           "name": "Orc"
+        },
+        {
+          "name": "Player2"
         }
       ]
     },
@@ -103,21 +106,6 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
-      "name": "Gun",
-      "persistentUuid": "99b4da72-aaa7-4230-8097-52220e835874",
-      "width": 0,
-      "x": 685,
-      "y": 325,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
       "layer": "UI",
       "name": "Ammo_Qty",
       "persistentUuid": "c509f2d8-be92-4023-bc6f-fd083549c395",
@@ -155,6 +143,21 @@
       "x": 24,
       "y": 64,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Gun",
+      "persistentUuid": "2451f8b2-d5fb-43d3-a1d0-3b135412cc27",
+      "width": 0,
+      "x": 608,
+      "y": 288,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -763,13 +766,13 @@
           "AmmoQuantity": 0,
           "ShotsPerReload": 6,
           "ReloadDuration": 2,
-          "MaxAmmo": 6,
+          "MaxAmmo": 100,
           "ShotsBeforeNextReload": 0,
           "TotalShotsFired": 0,
           "TotalBulletsCreated": 0,
-          "StartingAmmo": 0,
+          "StartingAmmo": 100,
           "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
+          "UnlimitedAmmo": false,
           "ReloadInProgress": false,
           "HeatIncreasePerShot": 0,
           "HeatLevel": 0,
@@ -782,12 +785,39 @@
           "BulletSpeedVariance": 0
         },
         {
-          "name": "FlashEffect",
-          "type": "Flash::FlashEffect",
+          "name": "Flash",
+          "type": "Flash::Flash",
           "HalfPeriodTime": 0.1,
           "IsFlashing": false,
-          "FlashDuration": 0,
-          "EffectName": ""
+          "FlashDuration": 0
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 10,
+          "CurrentHealth": 0,
+          "MaxHealth": 10,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
         },
         {
           "name": "TopDownMovement",
@@ -991,7 +1021,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "Run",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1213,7 +1243,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "Hit",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -3031,19 +3061,9 @@
                   "parameters": [
                     "",
                     "Player1",
-                    "Background.CenterX()",
-                    "Background.CenterY()",
+                    "CameraCenterX()",
+                    "CameraCenterY()",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "Player1",
-                    "=",
-                    "10"
                   ]
                 }
               ]
@@ -3070,19 +3090,37 @@
                   "parameters": [
                     "",
                     "Player2",
-                    "Background.CenterX()",
-                    "Background.CenterY()",
+                    "CameraCenterX()",
+                    "CameraCenterY()",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Gun",
+                    "693",
+                    "349",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "ChangePlan"
+                    "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
-                    "Player2",
-                    "=",
-                    "10"
+                    "Gun",
+                    "Equiped",
+                    ""
                   ]
                 }
               ]
@@ -3106,6 +3144,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
@@ -3124,6 +3167,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Movements Control",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3384,76 +3428,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Show dialog when close to weapon\nPress E to equip weapon"
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Distance"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Gun",
-                    "20",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "e"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Gun",
-                        "=",
-                        "Player1.PointX(\"Hand\")",
-                        "=",
-                        "Player1.PointY(\"Hand\")"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetObjectVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "Gun",
-                        "Equiped",
-                        "True"
-                      ]
-                    }
-                  ]
-                }
-              ]
             }
           ],
           "parameters": []
@@ -3508,6 +3482,12 @@
                         "20",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -3556,10 +3536,16 @@
                       },
                       "parameters": [
                         "",
-                        "Button",
                         "Gun",
+                        "Button",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -3594,6 +3580,17 @@
                         "Player",
                         "Gun",
                         "20",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "Gun",
+                        "Button",
                         ""
                       ]
                     }
@@ -3794,7 +3791,7 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
+                        "value": "FireBullet::FireBullet::Fire"
                       },
                       "parameters": [
                         "Player",
@@ -3802,10 +3799,9 @@
                         "Gun.PointX(\"Shoot\")",
                         "Gun.PointY(\"Shoot\")",
                         "Bullet",
-                        "CursorX()",
-                        "CursorY()",
-                        "250",
-                        ""
+                        "Gun.Angle()",
+                        "300",
+                        "250"
                       ]
                     }
                   ]
@@ -4162,10 +4158,6 @@
     {
       "name": "Pathfinding",
       "type": "PathfindingBehavior::PathfindingBehavior"
-    },
-    {
-      "name": "PlatformerObject",
-      "type": "PlatformBehavior::PlatformerObjectBehavior"
     },
     {
       "name": "Resizable",
