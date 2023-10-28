@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5843784410740956,
+    "zoomFactor": 1.6888536947041353,
     "windowMask": false
   },
   "objectsGroups": [
@@ -99,22 +99,6 @@
     }
   ],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 28,
-      "layer": "",
-      "name": "Player1",
-      "persistentUuid": "681688a5-3b19-4e6e-9cda-613e52a48d00",
-      "width": 16,
-      "x": 642,
-      "y": 331,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": false,
@@ -3033,7 +3017,7 @@
                   "parameters": [
                     "Gun",
                     "=",
-                    "Player1.ZOrder() + 10"
+                    "Player.ZOrder() + 10"
                   ]
                 }
               ],
@@ -3061,9 +3045,9 @@
                       "parameters": [
                         "Gun",
                         "=",
-                        "Player1.PointX(\"Hand\")",
+                        "Player.PointX(\"Hand\")",
                         "=",
-                        "Player1.PointY(\"Hand\")"
+                        "Player.PointY(\"Hand\")"
                       ]
                     },
                     {

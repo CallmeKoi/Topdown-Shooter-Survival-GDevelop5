@@ -669,16 +669,6 @@
       "actions": [
         {
           "type": {
-            "value": "SetFullScreen"
-          },
-          "parameters": [
-            "",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [

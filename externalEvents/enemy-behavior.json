@@ -50,8 +50,8 @@
                 "Enemies",
                 "Pathfinding",
                 "",
-                "Player1.BoundingBoxCenterX()",
-                "Player1.BoundingBoxCenterY()"
+                "Player.BoundingBoxCenterX()",
+                "Player.BoundingBoxCenterY()"
               ]
             }
           ]
