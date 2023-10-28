@@ -539,6 +539,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/tile_0359.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tile_0359.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/Screenshot 2023-10-28 011142.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/Screenshot 2023-10-28 011142.png\",\"extension\":\".png\"}",
@@ -714,6 +723,15 @@
         "metadata": "",
         "name": "assets\\Elf Male_Idle_1.png",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chort_Hurt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Chort_Hurt.png",
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -919,6 +937,24 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/Imp_Hurt_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Imp_Hurt_1",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc Warrior_Hurt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Orc Warrior_Hurt.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/assets_SelectFrame.png",
         "kind": "image",
         "metadata": "",
@@ -942,6 +978,33 @@
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\SelectFrame2",
         "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc_Hurt_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Orc_Hurt_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Swampy_Hurt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Swampy_Hurt.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Swampy_Hurt_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Swampy_Hurt_2.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],
@@ -979,7 +1042,7 @@
         {
           "folded": true,
           "type": "string",
-          "value": "Goblin"
+          "value": "Orc"
         },
         {
           "folded": true,
