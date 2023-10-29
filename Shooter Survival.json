@@ -530,37 +530,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Screenshot 2023-10-28 010409.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Screenshot 2023-10-28 010409.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/tile_0359.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\tile_0359.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Screenshot 2023-10-28 011142.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Screenshot 2023-10-28 011142.png\",\"extension\":\".png\"}",
-        "name": "assets\\Screenshot 2023-10-28 011142.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/severin-baclet-example-middle01.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\severin-baclet-example-middle01.jpg",
         "smoothed": true,
         "userAdded": true
       },
@@ -575,162 +548,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Elf Male_Hit.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Hit.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/449eb83ef8e0b142c3a3742f5b0498c1fc80604ed955696de4f9005d4b9e726f_Elf Male_Hit.png",
-          "name": "Elf Male_Hit.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/9fcf9b6cb9ace145f936b3b832ac22ce9371f6ade4b7bab2c094bc965b0240b7_Elf Male_Idle_1.png",
-          "name": "Elf Male_Idle_1.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/0619b364433ad2c43cac79c3b3de6be51ff1278dbdf17e1476b39e041ae7b424_Elf Male_Idle_2.png",
-          "name": "Elf Male_Idle_2.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/347a34e5867cf927e4aab5f18768cc3e365c199303af211254592a8f52587a8b_Elf Male_Idle_3.png",
-          "name": "Elf Male_Idle_3.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/4f8212ae1c009a462b1ae79e3e98d7a1024af3a1ea0b407c6b5bfd8c071f9cf1_Elf Male_Idle_4.png",
-          "name": "Elf Male_Idle_4.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Run_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Run_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/bab8359a13fd699510cfc168363e256def2c8d3f0416073fdd2c8f06a3e0758c_Elf Male_Run_1.png",
-          "name": "Elf Male_Run_1.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Run_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Run_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/98fb8cb23d9aa947acffdb1903f9f500864de27ae4eccb5fc0958e9406b4beb1_Elf Male_Run_2.png",
-          "name": "Elf Male_Run_2.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Run_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Run_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/92aa348371af4c6ae17d1dea1bd4020a14479734094f9e306ea539b8a97916ce_Elf Male_Run_3.png",
-          "name": "Elf Male_Run_3.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Run_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Elf Male_Run_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/5e23cab987447a6985fb0f1ffbd17b65fa63675f975a809402835f135742346d_Elf Male_Run_4.png",
-          "name": "Elf Male_Run_4.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Female_Hit.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "e74a9d26210312281ffdf8ec19afffda13d70d925aaac0d55b40826fdf8db234_Elf Female_Hit.png",
-        "smoothed": false,
-        "userAdded": true,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/e74a9d26210312281ffdf8ec19afffda13d70d925aaac0d55b40826fdf8db234_Elf Female_Hit.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Elf Male_Run_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "5e23cab987447a6985fb0f1ffbd17b65fa63675f975a809402835f135742346d_Elf Male_Run_4.png",
-        "smoothed": false,
-        "userAdded": true,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/5e23cab987447a6985fb0f1ffbd17b65fa63675f975a809402835f135742346d_Elf Male_Run_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Elf Male_Idle_1.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Elf Male_Idle_1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Chort_Hurt.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Chort_Hurt.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -874,38 +695,11 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Red Button With Stone Frame_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Red Button With Stone Frame_Hovered.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Red Button With Stone Frame_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Red Button With Stone Frame_Idle.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Red Button With Stone Frame_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Red Button With Stone Frame_Pressed.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Knight Female_Idle_1.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Knight Female_Idle_1.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": true
       },
       {
@@ -919,56 +713,11 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/SelectFrame.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/SelectFrame.png\",\"extension\":\".png\"}",
-        "name": "assets\\SelectFrame.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_SelectFrame.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "assets\\SelectFrame",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Imp_Hurt_1.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Imp_Hurt_1",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Orc Warrior_Hurt.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Orc Warrior_Hurt.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_SelectFrame.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\assets_SelectFrame.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_SelectFrame.gif.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\assets_SelectFrame.gif.png",
-        "smoothed": true,
         "userAdded": true
       },
       {
@@ -997,15 +746,6 @@
         "name": "assets\\Swampy_Hurt.png",
         "smoothed": false,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Swampy_Hurt_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Swampy_Hurt_2.png",
-        "smoothed": false,
-        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1031,6 +771,7 @@
       "value": 0
     },
     {
+      "folded": true,
       "name": "Tier1",
       "type": "array",
       "children": [
@@ -1048,6 +789,26 @@
           "folded": true,
           "type": "string",
           "value": "Swampy"
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "CharacterID",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CharacterList",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": "Knight"
+        },
+        {
+          "type": "string",
+          "value": "Elf"
         }
       ]
     }
