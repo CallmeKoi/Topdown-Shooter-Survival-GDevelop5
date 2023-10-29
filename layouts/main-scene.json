@@ -26,7 +26,7 @@
       "name": "Objects",
       "objects": [
         {
-          "name": "Player1"
+          "name": "Knight"
         },
         {
           "name": "Gun"
@@ -41,7 +41,7 @@
           "name": "Orc"
         },
         {
-          "name": "Player2"
+          "name": "Elf"
         }
       ]
     },
@@ -85,10 +85,10 @@
       "name": "Player",
       "objects": [
         {
-          "name": "Player1"
+          "name": "Knight"
         },
         {
-          "name": "Player2"
+          "name": "Elf"
         }
       ]
     }
@@ -99,6 +99,29 @@
       "name": "SpawnDir",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "PlayerStats",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "ChildVariable2",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "ChildVariable3",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "Unnamed",
+          "type": "string",
+          "value": ""
+        }
+      ]
     }
   ],
   "instances": [
@@ -167,7 +190,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "33ed30afda21555c3970a46738516ac9bd9debdeb227ecac941391f7a38f020b",
-      "name": "Player1",
+      "name": "Knight",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -710,7 +733,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "33ed30afda21555c3970a46738516ac9bd9debdeb227ecac941391f7a38f020b",
-      "name": "Player2",
+      "name": "Elf",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -3009,7 +3032,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Beginning of Scene",
+      "name": "Scene Initialize",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -3025,71 +3048,27 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "2.5",
-                "",
-                ""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "VarGlobal"
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [
-                    "Character",
-                    "=",
-                    "0"
-                  ]
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
+                    "value": "CreateByName"
                   },
                   "parameters": [
                     "",
-                    "Player1",
-                    "CameraCenterX()",
-                    "CameraCenterY()",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarGlobal"
-                  },
-                  "parameters": [
-                    "Character",
-                    "=",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "Player2",
+                    "Player",
+                    "CharacterList[CharacterID]",
                     "CameraCenterX()",
                     "CameraCenterY()",
                     ""
@@ -3126,6 +3105,44 @@
               ]
             }
           ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Camera Control",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "2.5",
+                "",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3144,11 +3161,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "parameters": []
@@ -3437,6 +3449,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Gun",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",

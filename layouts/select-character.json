@@ -688,7 +688,7 @@
             "value": "ModVarGlobal"
           },
           "parameters": [
-            "Character",
+            "CharacterID",
             "=",
             "0"
           ]
@@ -753,7 +753,7 @@
             "value": "ModVarGlobal"
           },
           "parameters": [
-            "Character",
+            "CharacterID",
             "=",
             "0"
           ]
@@ -810,7 +810,7 @@
             "value": "ModVarGlobal"
           },
           "parameters": [
-            "Character",
+            "CharacterID",
             "=",
             "1"
           ]
