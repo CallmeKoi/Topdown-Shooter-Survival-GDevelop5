@@ -38,14 +38,17 @@
 
 ***
 ## 2. Công nghệ:
-- Game Engine: [GDevelop5](https://gdevelop.io/)
+ <a href="https://gdevelop.io/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/GDevelop_complete_logo_%28purple_background%29.svg/1200px-GDevelop_complete_logo_%28purple_background%29.svg.png" alt="GDevelop" width="400" height="200">
+</a>
+
 ## 3. Phân công công việc:
 ### Thành viên:
-- Nguyễn Đăng Khôi - 21DH11432
-- Vũ Khải Hoàn - 21DH113632
+1️⃣ Nguyễn Đăng Khôi - 21DH114432 <br>
+2️⃣ Vũ Khải Hoàn - 21DH113632
 
 |Công việc|Khôi   |Hoàn  |
-|---------|-------|-------|
+|:-------:|:-----:|:----:|
 |    1    |  ✅  |  ✅  |
 |    2    |  ☑️  |  ☑️  |
 |    3    |  ⭕  |  ❌  |
