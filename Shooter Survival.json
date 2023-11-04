@@ -695,19 +695,49 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Knight Female_Idle_1.png",
+        "file": "assets/Square White Slider Border.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Knight Female_Idle_1.png",
+        "name": "Square White Slider Border.png",
         "smoothed": false,
-        "userAdded": true
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Location.png",
+        "file": "assets/Square White Slider Fill Bar.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Location.png",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UI/Location.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UI\\Location.png",
         "smoothed": true,
         "userAdded": true
       },

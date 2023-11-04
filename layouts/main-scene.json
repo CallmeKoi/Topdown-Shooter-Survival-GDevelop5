@@ -351,6 +351,7 @@
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "ignoreDefaultControls": true,
+
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
