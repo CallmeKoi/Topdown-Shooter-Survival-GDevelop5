@@ -527,11 +527,295 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/0c5d85151daec5c1145f729bcc93d976228940f09b1a5e85b048eceed66e7f59_Swampy_Run_4.png",
           "name": "Swampy_Run_4.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tile_0359.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tile_0359.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Idle_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Run_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Run_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Run_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Run_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Run_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Run_5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Elf Male_Hit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Elf Male_Hit.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Red Button With Stone Frame_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Stone Frame_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d9f2505db653cb1b2521765fbc9c9f95794067d8ae038e3e6a8c14b8075b7181_Red Button With Stone Frame_Hovered.png",
+          "name": "Red Button With Stone Frame_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Red Button With Stone Frame_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Stone Frame_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/0bc6460559978afa6726124ef313f6faa64903b5d2f19fd3f3474af804bcfe9f_Red Button With Stone Frame_Idle.png",
+          "name": "Red Button With Stone Frame_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Red Button With Stone Frame_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button With Stone Frame_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5a9c6130f5e1b226dde18e673aaac546a54ee35fc68aedd4aab998b93ed9fa1d_Red Button With Stone Frame_Pressed.png",
+          "name": "Red Button With Stone Frame_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Roboto-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Roboto-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "name": "Roboto-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/Elfboyclassic-PKZgZ.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Elfboyclassic-PKZgZ.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Knight Female_Idle_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Location.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Location.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Imp_Hurt_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Imp_Hurt_1",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_SelectFrame2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\SelectFrame2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Orc_Hurt_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Orc_Hurt_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Swampy_Hurt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Swampy_Hurt.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar Blue Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Blue Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/f270f84b907c4d653ca7fad99ab890b31642bdbc0b22a189ff45be51240cf52b_Flat Bar Blue Fill Bar.png",
+          "name": "Flat Bar Blue Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Health_01_x3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Health_01_x3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/332d86b796eb1f1b3f47656c23dd93b7e2436946e324fe5fbc869dce861e641d_Ammo 1.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "332d86b796eb1f1b3f47656c23dd93b7e2436946e324fe5fbc869dce861e641d_Ammo 1.png2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Health_01_Bar01_x3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\Health_01_Bar01_x3.png2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Health_01_Bar02_x3.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\Health_01_Bar02_x3.png2",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
   "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "objectsGroups": [],
   "variables": [
     {
@@ -552,6 +836,7 @@
       "value": 0
     },
     {
+      "folded": true,
       "name": "Tier1",
       "type": "array",
       "children": [
@@ -563,12 +848,32 @@
         {
           "folded": true,
           "type": "string",
-          "value": "Goblin"
+          "value": "Orc"
         },
         {
           "folded": true,
           "type": "string",
           "value": "Swampy"
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "CharacterID",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CharacterList",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": "Knight"
+        },
+        {
+          "type": "string",
+          "value": "Elf"
         }
       ]
     }
@@ -577,6 +882,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/main-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/select-character"
     }
   ],
   "externalEvents": [
@@ -590,6 +899,18 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flash"
