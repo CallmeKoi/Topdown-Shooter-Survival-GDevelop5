@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5117784035210193,
+    "zoomFactor": 0.624453782660004,
     "windowMask": false
   },
   "objectsGroups": [
@@ -133,8 +133,8 @@
       "name": "Ammo_Qty",
       "persistentUuid": "c509f2d8-be92-4023-bc6f-fd083549c395",
       "width": 0,
-      "x": 24,
-      "y": 128,
+      "x": 32,
+      "y": 126,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -149,23 +149,8 @@
       "persistentUuid": "7a91e5aa-e55d-497a-aa85-a532f95103a5",
       "width": 0,
       "x": 22,
-      "y": 192,
+      "y": 190,
       "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "UI",
-      "name": "Health",
-      "persistentUuid": "033caa88-95ee-450d-b214-203ca07df611",
-      "width": 0,
-      "x": 24,
-      "y": 64,
-      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -184,6 +169,54 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 48,
+      "layer": "UI",
+      "name": "HealthBar",
+      "persistentUuid": "a70f9943-3c0b-48d9-828d-6a9e2af4382a",
+      "width": 256,
+      "x": 32,
+      "y": 64,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 34,
+      "layer": "UI",
+      "name": "XPBar",
+      "persistentUuid": "41265a98-9830-4735-abb0-4de2704017f3",
+      "width": 1216,
+      "x": 32,
+      "y": 0,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 23,
+      "layer": "UI",
+      "name": "AmmoSprite",
+      "persistentUuid": "397e8faf-710f-4d2f-aede-c720e6b0ee4b",
+      "width": 103,
+      "x": 313,
+      "y": 201,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -191,7 +224,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "33ed30afda21555c3970a46738516ac9bd9debdeb227ecac941391f7a38f020b",
       "name": "Knight",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -734,7 +766,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "33ed30afda21555c3970a46738516ac9bd9debdeb227ecac941391f7a38f020b",
       "name": "Elf",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1325,7 +1356,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "fb540ae861b7ddaa64b46c86920d1aa207e95d611d0e4ce65394f2fff3b42c25",
       "name": "Gun",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -1404,7 +1434,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Spawner",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1465,7 +1494,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "470d466247528bde5e8591d415e98d3942c8d9f20bc2de72746b8323af6f9446",
       "name": "Imp",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1896,7 +1924,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "4d010ca4f1eef38cfa242c6d206ca43c5617b7fcc8e67879471a610f4a0b312f",
       "name": "Orc",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2327,7 +2354,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "7cfcff2bade8747074155f7ff18d9183fd5019215266dc813aec562f9e7db55d",
       "name": "Bullet",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2388,7 +2414,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "2e3f7a2e4c18aa0424ca88a105df43b5c2982b7e94c4db29367f35f249f04e0f",
       "name": "Swampy",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2821,7 +2846,6 @@
       "italic": false,
       "name": "Ammo_Qty",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2843,7 +2867,6 @@
       "italic": false,
       "name": "ShotsUntilReload",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2865,7 +2888,6 @@
       "italic": false,
       "name": "Health",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2882,32 +2904,9 @@
       }
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Instruction",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Press",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Button",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2968,7 +2967,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Background",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3024,8 +3022,207 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "930bf94bbc2de9caf90c8783178b6328c44197e7524e28af8ba54858e289e00a",
+      "name": "HealthBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 1,
+        "InitialValue": 4,
+        "MaxValue": 8,
+        "BarTopPadding": 0,
+        "BarLeftPadding": 48,
+        "BarBottomPadding": 0,
+        "BarRightPadding": 9,
+        "ShowLabel": false
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 9,
+          "height": 48,
+          "leftMargin": 48,
+          "rightMargin": 9,
+          "texture": "assets\\Health_01_x3.png",
+          "tiled": true,
+          "topMargin": 5,
+          "width": 192
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 48,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\Health_01_Bar02_x3.png2",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 192
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 48,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\Health_01_Bar01_x3.png2",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "8 / 16",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 14,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      }
+    },
+    {
+      "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
+      "name": "XPBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 16,
+        "InitialValue": 8
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 34,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Flat Bar White Border.png",
+          "tiled": true,
+          "topMargin": 6,
+          "width": 224
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 48,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Blue Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 48
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 48,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Blue Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 48
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "8 / 16",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 16,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 23,
+      "leftMargin": 0,
+      "name": "AmmoSprite",
+      "rightMargin": 0,
+      "texture": "332d86b796eb1f1b3f47656c23dd93b7e2436946e324fe5fbc869dce861e641d_Ammo 1.png2",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 13,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Knight"
+      },
+      {
+        "objectName": "Elf"
+      },
+      {
+        "objectName": "Gun"
+      },
+      {
+        "objectName": "Spawner"
+      },
+      {
+        "objectName": "Imp"
+      },
+      {
+        "objectName": "Orc"
+      },
+      {
+        "objectName": "Bullet"
+      },
+      {
+        "objectName": "Swampy"
+      },
+      {
+        "objectName": "Ammo_Qty"
+      },
+      {
+        "objectName": "ShotsUntilReload"
+      },
+      {
+        "objectName": "Health"
+      },
+      {
+        "objectName": "Button"
+      },
+      {
+        "objectName": "Background"
+      },
+      {
+        "objectName": "HealthBar"
+      },
+      {
+        "objectName": "XPBar"
+      },
+      {
+        "objectName": "AmmoSprite"
+      }
+    ]
+  },
   "events": [
     {
       "colorB": 228,
@@ -3071,6 +3268,28 @@
                     "CharacterList[CharacterID]",
                     "CameraCenterX()",
                     "CameraCenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    "=",
+                    "Player.Health::MaxHealth()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    "=",
+                    "Player.Health::MaxHealth()",
                     ""
                   ]
                 }
@@ -3939,8 +4158,19 @@
                     "Player",
                     "Health",
                     "1",
-                    "no",
-                    "no",
+                    "yes",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    "=",
+                    "Player.Health::Health()",
                     ""
                   ]
                 }
@@ -4022,6 +4252,17 @@
                 "ShotsUntilReload",
                 "=",
                 "\"Shots Until Reload: \" + ToString(Player.FireBullet::ShotsBeforeNextReload())"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "AmmoSprite",
+                "Resizable",
+                "=",
+                "Player.FireBullet::ShotsBeforeNextReload()*17"
               ]
             }
           ]
@@ -4179,6 +4420,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

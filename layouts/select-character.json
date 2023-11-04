@@ -156,7 +156,6 @@
       "italic": false,
       "name": "LabelKnight",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -178,7 +177,6 @@
       "italic": false,
       "name": "LabelElf",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -200,7 +198,6 @@
       "italic": false,
       "name": "SelectCharacter",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -219,7 +216,6 @@
     {
       "assetStoreId": "b6e192c68f93de7846e94964878d4edf7b8071a1e295788658c044e70aff7543",
       "name": "ButtonOK",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -284,7 +280,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Character1",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -345,7 +340,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Character2",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -406,7 +400,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "HitBox",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -467,7 +460,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "SelectFrame",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -534,7 +526,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Maker1",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -595,7 +586,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Maker2",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -653,6 +643,41 @@
       ]
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "LabelKnight"
+      },
+      {
+        "objectName": "LabelElf"
+      },
+      {
+        "objectName": "SelectCharacter"
+      },
+      {
+        "objectName": "ButtonOK"
+      },
+      {
+        "objectName": "Character1"
+      },
+      {
+        "objectName": "Character2"
+      },
+      {
+        "objectName": "HitBox"
+      },
+      {
+        "objectName": "SelectFrame"
+      },
+      {
+        "objectName": "Maker1"
+      },
+      {
+        "objectName": "Maker2"
+      }
+    ]
+  },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
