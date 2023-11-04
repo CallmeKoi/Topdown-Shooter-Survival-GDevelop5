@@ -808,6 +808,285 @@
         "name": "assets\\Health_01_Bar02_x3.png2",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/forest_temple_entrance_by_hassly_demuovy.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\forest_temple_entrance_by_hassly_demuovy.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Hit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Hit.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/7d224acdfcd0df82aa01d1fea365ac27ba006e37ea4c7629456195a3f3cedbc6_Wizard Male_Hit.png",
+          "name": "Wizard Male_Hit.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/f90a662dce3d63f52ab39871cf89d324dfa67ea145bdc04affa06af3975d716e_Wizard Male_Idle_1.png",
+          "name": "Wizard Male_Idle_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/6fb7767e4762ac39050169cf3894a122e2540cc4a51a27386d2b5722156f4630_Wizard Male_Idle_2.png",
+          "name": "Wizard Male_Idle_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/482cb49f79004a91dda062cd56dc23e20e5284a8aa177ce5bfb59cb4fd07bcb2_Wizard Male_Idle_3.png",
+          "name": "Wizard Male_Idle_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/dcd31c3dd9867444769919a402bf456e5808771308e6e97daf2b740b747bfcbc_Wizard Male_Idle_4.png",
+          "name": "Wizard Male_Idle_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Run_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/e4e99253e72f43697a8894b147ed8a38ae2a74bd03b2afdd4cb9c1f2a07d7d0b_Wizard Male_Run_1.png",
+          "name": "Wizard Male_Run_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Run_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/23aa953e218e965cb22e49a07139df282251ed8d3ff1f20fbd98095b55854c97_Wizard Male_Run_2.png",
+          "name": "Wizard Male_Run_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Run_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/b65dd659f3f19d202bc90ee006ddfe942a4b4e86b8d54d6e17ce524d96223a7a_Wizard Male_Run_3.png",
+          "name": "Wizard Male_Run_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wizard Male_Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wizard Male_Run_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/8e666876948f9f5bd8ca41c339ed3904b21bd83a00ac3dcf41b5fda172d2c171_Wizard Male_Run_4.png",
+          "name": "Wizard Male_Run_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Hit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Hit.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/eacb9e28b8148e5be644610d057be4bf8ce2ffe0a48cd4d126ed7c389b9b4a64_Lizard Male_Hit.png",
+          "name": "Lizard Male_Hit.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/8eb4980b1e03cf5a56e43c49e20213d3f64522a8d3e46f5b6b8e2831732856b0_Lizard Male_Idle_1.png",
+          "name": "Lizard Male_Idle_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/68a1cf3b53c33b7180b4d2a401db7c0336ce3244405e0d592aa730b18c8afe1b_Lizard Male_Idle_2.png",
+          "name": "Lizard Male_Idle_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/be70ac3fb9d301477e8c24f594e899aec059574547325245749bafd9a6842e8e_Lizard Male_Idle_3.png",
+          "name": "Lizard Male_Idle_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/cc0d9191113ec2deb28fb22b58ff30a4f779d9f6c5d9abdbcdd3c9f7b2a1b339_Lizard Male_Idle_4.png",
+          "name": "Lizard Male_Idle_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Run_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/d203a0d9e6140694c01a13e93c1d41e1bd07147c59665c8accf89b9c13fe74de_Lizard Male_Run_1.png",
+          "name": "Lizard Male_Run_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Run_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/8fd40cf4a2dbe0e42a959ee64b16ee345f0c44cdf0024736d8a8dfc85f2169d0_Lizard Male_Run_2.png",
+          "name": "Lizard Male_Run_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Run_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/66ff782e66d22f7a2a6bcd2723715ed8d1eb5a37cba41c6cda025772c24013e0_Lizard Male_Run_3.png",
+          "name": "Lizard Male_Run_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Lizard Male_Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lizard Male_Run_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Characters/ba81ccaba7d89cc657854c49e0fd33047987782b918a74a40bc92b617f7a3d27_Lizard Male_Run_4.png",
+          "name": "Lizard Male_Run_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Knight Female_Run_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Knight Female_Run_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Knight Female_Run_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Knight Female_Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Knight Female_Run_4.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -874,6 +1153,15 @@
         {
           "type": "string",
           "value": "Elf"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Wizarad"
+        },
+        {
+          "type": "string",
+          "value": "Lizard"
         }
       ]
     }
