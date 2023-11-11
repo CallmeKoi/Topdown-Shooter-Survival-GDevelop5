@@ -1177,6 +1177,87 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
           "name": "Square White Slider Thumb.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Cay do.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Cay do.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Nen tron.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Nen tron.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Forest Cliff.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Forest Cliff.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Forest Cliff.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Forest Cliff.png2.png\"}",
+        "name": "Forest Cliff.png2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Goc trai.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Goc trai.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Hang da.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Hang da.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Goc phai.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Goc phai.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/crosshair026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\crosshair026.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_SelectFrame.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\SelectFrame",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1291,10 +1372,6 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
     },
     {
@@ -1318,6 +1395,11 @@
       "referenceTo": "/eventsFunctionsExtensions/firebullet"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/level"
+    }
+  ],
   "externalSourceFiles": []
 }
