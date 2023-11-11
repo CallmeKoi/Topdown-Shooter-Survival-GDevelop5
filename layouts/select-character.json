@@ -388,42 +388,6 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Knight Female_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 8
-                      },
-                      {
-                        "x": 15,
-                        "y": 28
-                      },
-                      {
-                        "x": 0,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
                   "image": "assets\\Knight Female_Run_1.png",
                   "points": [],
                   "originPoint": {
@@ -441,19 +405,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 28
+                        "y": 27
                       },
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 27
                       }
                     ]
                   ]
@@ -477,19 +441,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 28
+                        "y": 27
                       },
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 27
                       }
                     ]
                   ]
@@ -513,19 +477,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 28
+                        "y": 27
                       },
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 27
                       }
                     ]
                   ]
@@ -549,19 +513,19 @@
                     [
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 8
+                        "y": 7
                       },
                       {
                         "x": 15,
-                        "y": 28
+                        "y": 27
                       },
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 27
                       }
                     ]
                   ]

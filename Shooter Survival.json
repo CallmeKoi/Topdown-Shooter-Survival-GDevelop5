@@ -676,61 +676,11 @@
         }
       },
       {
-        "file": "assets/Roboto-Regular.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "Roboto-Regular.ttf",
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
-          "name": "Roboto-Regular.ttf"
-        }
-      },
-      {
         "file": "assets/Elfboyclassic-PKZgZ.ttf",
         "kind": "font",
         "metadata": "",
         "name": "assets\\Elfboyclassic-PKZgZ.ttf",
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
-          "name": "Square White Slider Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
-          "name": "Square White Slider Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Thumb.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Thumb.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
-          "name": "Square White Slider Thumb.png"
-        }
       },
       {
         "alwaysLoaded": false,
@@ -1117,6 +1067,116 @@
         "name": "assets\\Knight Female_Run_4.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/european_medieval_village_by_klauspillon_d9667s2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\european_medieval_village_by_klauspillon_d9667s2.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Halo.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Halo.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "assets/Halo Outline.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Halo Outline.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Location.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Location.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square Blue Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Blue Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/4358a20ce4a1e83f8643b287f37cefadefc1941d23cfdc50a3836ecd0dd209f1_Square Blue Slider Border.png",
+          "name": "Square Blue Slider Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square Blue Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Blue Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/71e7d4c8549a750e6e7b6bc6508a352176cb64a57129e96bdd8f2c5bbc187820_Square Blue Slider Fill Bar.png",
+          "name": "Square Blue Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square Blue Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square Blue Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/984a68a8bbb562d3f01a8a1993720778df07d37bb3314ed6f1aaf3d4f0edede3_Square Blue Slider Thumb.png",
+          "name": "Square Blue Slider Thumb.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Border2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Fill Bar2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Thumb2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -1204,6 +1264,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/select-character"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main-menu"
     }
   ],
   "externalEvents": [
@@ -1217,6 +1281,14 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"

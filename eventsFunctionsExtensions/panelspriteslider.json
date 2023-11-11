@@ -3690,7 +3690,6 @@
           "italic": false,
           "name": "Label",
           "smoothed": true,
-          "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
@@ -3713,7 +3712,6 @@
           "leftMargin": 0,
           "name": "Thumb",
           "rightMargin": 0,
-          "tags": "",
           "texture": "",
           "tiled": false,
           "topMargin": 0,
@@ -3736,7 +3734,6 @@
           "leftMargin": 0,
           "name": "FillBar",
           "rightMargin": 0,
-          "tags": "",
           "texture": "",
           "tiled": true,
           "topMargin": 0,
@@ -3762,7 +3759,6 @@
           "leftMargin": 0,
           "name": "Background",
           "rightMargin": 0,
-          "tags": "",
           "texture": "",
           "tiled": true,
           "topMargin": 0,
@@ -3783,7 +3779,24 @@
             }
           ]
         }
-      ]
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Label"
+          },
+          {
+            "objectName": "Thumb"
+          },
+          {
+            "objectName": "FillBar"
+          },
+          {
+            "objectName": "Background"
+          }
+        ]
+      }
     }
   ]
 }

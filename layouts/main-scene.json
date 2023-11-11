@@ -351,7 +351,6 @@
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "ignoreDefaultControls": true,
-
           "acceleration": 4000,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1234,48 +1233,6 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Elf Male_Run_4.png",
-                  "points": [
-                    {
-                      "name": "Hand",
-                      "x": 8,
-                      "y": 23.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 8,
-                    "y": 27.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 8,
-                    "y": 14
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 9
-                      },
-                      {
-                        "x": 16,
-                        "y": 9
-                      },
-                      {
-                        "x": 16,
-                        "y": 28
-                      },
-                      {
-                        "x": 1,
-                        "y": 28
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Elf Male_Run_5.png",
                   "points": [
                     {
                       "name": "Hand",
@@ -2987,66 +2944,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Background",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Background.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 0
-                      },
-                      {
-                        "x": 1280,
-                        "y": 720
-                      },
-                      {
-                        "x": 0,
-                        "y": 720
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "930bf94bbc2de9caf90c8783178b6328c44197e7524e28af8ba54858e289e00a",
       "name": "HealthBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
@@ -3212,7 +3109,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\forest_temple_entrance_by_hassly_demuovy.jpg",
+                  "image": "assets\\Background.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3232,16 +3129,16 @@
                         "y": 0
                       },
                       {
-                        "x": 2160,
+                        "x": 1280,
                         "y": 0
                       },
                       {
-                        "x": 2160,
-                        "y": 2160
+                        "x": 1280,
+                        "y": 720
                       },
                       {
                         "x": 0,
-                        "y": 2160
+                        "y": 720
                       }
                     ]
                   ]
@@ -3358,7 +3255,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Idle_1.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3394,7 +3297,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Idle_2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3430,7 +3339,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Idle_3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3466,7 +3381,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Idle_4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3514,7 +3435,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Run_1.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3550,7 +3477,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Run_2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3586,7 +3519,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Run_3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3622,7 +3561,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Run_4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3670,7 +3615,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Lizard Male_Hit.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8,
+                      "y": 23
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3815,7 +3766,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Idle_1.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3851,7 +3808,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Idle_2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3887,7 +3850,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Idle_3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3923,7 +3892,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Idle_4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -3971,7 +3946,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Run_1.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -4007,7 +3988,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Run_2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -4043,7 +4030,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Run_3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -4079,7 +4072,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Run_4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -4127,7 +4126,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Wizard Male_Hit.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Hand",
+                      "x": 8.5,
+                      "y": 24.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -4211,9 +4216,6 @@
       },
       {
         "objectName": "Button"
-      },
-      {
-        "objectName": "Background"
       },
       {
         "objectName": "HealthBar"

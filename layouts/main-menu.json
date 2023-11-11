@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4950840073748899,
+    "zoomFactor": 0.6672773998329988,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -196,14 +196,13 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 32,
-      "height": 28,
+      "customSize": false,
+      "height": 0,
       "layer": "",
       "name": "SoundSlider",
-      "persistentUuid": "a266becd-188a-4884-bfa6-ad123fa7f40d",
-      "width": 320,
-      "x": 1888,
+      "persistentUuid": "f688ed74-dde9-4333-8871-76d6ab04d897",
+      "width": 0,
+      "x": 1915,
       "y": 450,
       "zOrder": 12,
       "numberProperties": [],
@@ -212,15 +211,14 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 32,
-      "height": 28,
+      "customSize": false,
+      "height": 0,
       "layer": "",
       "name": "MusicSlider",
-      "persistentUuid": "091ed409-c221-4367-98be-215900161f19",
-      "width": 320,
-      "x": 1888,
-      "y": 546,
+      "persistentUuid": "37cc8af0-47c8-42ed-a2e5-e3a425812c18",
+      "width": 0,
+      "x": 1917,
+      "y": 548,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -234,14 +232,13 @@
       "italic": false,
       "name": "Topdown_Shooter",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
       "string": "TOPDOWN SHOOTER",
-      "font": "UI\\Halo.ttf",
+      "font": "assets\\Halo.ttf",
       "textAlignment": "center",
       "characterSize": 65,
       "color": {
@@ -256,14 +253,13 @@
       "italic": false,
       "name": "Survival",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
       "string": "SURVIVAL",
-      "font": "UI\\Halo Outline.ttf",
+      "font": "assets\\Halo Outline.ttf",
       "textAlignment": "center",
       "characterSize": 55,
       "color": {
@@ -278,7 +274,6 @@
       "italic": false,
       "name": "Play",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -296,13 +291,13 @@
         }
       ],
       "string": "Play",
-      "font": "UI\\Elfboyclassic-PKZgZ.ttf",
+      "font": "assets\\Elfboyclassic-PKZgZ.ttf",
       "textAlignment": "center",
       "characterSize": 80,
       "color": {
-        "b": 194,
-        "g": 227,
-        "r": 80
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -311,7 +306,6 @@
       "italic": false,
       "name": "Settings",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -329,13 +323,13 @@
         }
       ],
       "string": "Settings",
-      "font": "UI\\Elfboyclassic-PKZgZ.ttf",
+      "font": "assets\\Elfboyclassic-PKZgZ.ttf",
       "textAlignment": "center",
       "characterSize": 80,
       "color": {
-        "b": 194,
-        "g": 227,
-        "r": 80
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -344,7 +338,6 @@
       "italic": false,
       "name": "Quit",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -362,13 +355,13 @@
         }
       ],
       "string": "Quit",
-      "font": "UI\\Elfboyclassic-PKZgZ.ttf",
+      "font": "assets\\Elfboyclassic-PKZgZ.ttf",
       "textAlignment": "center",
       "characterSize": 80,
       "color": {
-        "b": 194,
-        "g": 227,
-        "r": 80
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -377,20 +370,19 @@
       "italic": false,
       "name": "Sound",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
       "string": "Sound",
-      "font": "UI\\Elfboyclassic-PKZgZ.ttf",
+      "font": "assets\\Elfboyclassic-PKZgZ.ttf",
       "textAlignment": "center",
       "characterSize": 80,
       "color": {
-        "b": 194,
-        "g": 227,
-        "r": 80
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -399,20 +391,19 @@
       "italic": false,
       "name": "Music",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
       "string": "Music",
-      "font": "UI\\Elfboyclassic-PKZgZ.ttf",
+      "font": "assets\\Elfboyclassic-PKZgZ.ttf",
       "textAlignment": "center",
       "characterSize": 80,
       "color": {
-        "b": 194,
-        "g": 227,
-        "r": 80
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
@@ -421,7 +412,6 @@
       "italic": false,
       "name": "Back",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -439,146 +429,19 @@
         }
       ],
       "string": "Back",
-      "font": "UI\\Elfboyclassic-PKZgZ.ttf",
+      "font": "assets\\Elfboyclassic-PKZgZ.ttf",
       "textAlignment": "center",
       "characterSize": 80,
       "color": {
-        "b": 194,
-        "g": 227,
-        "r": 80
-      }
-    },
-    {
-      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
-      "name": "SoundSlider",
-      "tags": "",
-      "type": "PanelSpriteSlider::PanelSpriteSlider",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "BarTopPadding": 6,
-        "BarLeftPadding": 6,
-        "BarRightPadding": 6,
-        "BarBottomPadding": 6,
-        "LabelMargin": 6
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 4,
-          "height": 28,
-          "leftMargin": 2,
-          "rightMargin": 2,
-          "texture": "Square White Slider Border.png",
-          "tiled": false,
-          "topMargin": 4,
-          "width": 265
-        },
-        "FillBar": {
-          "bottomMargin": 2,
-          "height": 16,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Square White Slider Fill Bar.png",
-          "tiled": false,
-          "topMargin": 0,
-          "width": 16
-        },
-        "Label": {
-          "bold": true,
-          "italic": true,
-          "smoothed": true,
-          "underlined": false,
-          "string": "It displays the value when it changes.",
-          "font": "",
-          "textAlignment": "",
-          "characterSize": 20,
-          "color": {
-            "b": 194,
-            "g": 227,
-            "r": 80
-          }
-        },
-        "Thumb": {
-          "bottomMargin": 2,
-          "height": 36,
-          "leftMargin": 1,
-          "rightMargin": 1,
-          "texture": "Square White Slider Thumb.png",
-          "tiled": false,
-          "topMargin": 2,
-          "width": 22
-        }
-      }
-    },
-    {
-      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
-      "name": "MusicSlider",
-      "tags": "",
-      "type": "PanelSpriteSlider::PanelSpriteSlider",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "BarTopPadding": 6,
-        "BarLeftPadding": 6,
-        "BarRightPadding": 6,
-        "BarBottomPadding": 6,
-        "LabelMargin": 6
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 4,
-          "height": 28,
-          "leftMargin": 2,
-          "rightMargin": 2,
-          "texture": "Square White Slider Border.png",
-          "tiled": false,
-          "topMargin": 4,
-          "width": 265
-        },
-        "FillBar": {
-          "bottomMargin": 2,
-          "height": 16,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Square White Slider Fill Bar.png",
-          "tiled": false,
-          "topMargin": 0,
-          "width": 16
-        },
-        "Label": {
-          "bold": true,
-          "italic": true,
-          "smoothed": true,
-          "underlined": false,
-          "string": "It displays the value when it changes.",
-          "font": "",
-          "textAlignment": "",
-          "characterSize": 20,
-          "color": {
-            "b": 194,
-            "g": 227,
-            "r": 80
-          }
-        },
-        "Thumb": {
-          "bottomMargin": 2,
-          "height": 36,
-          "leftMargin": 1,
-          "rightMargin": 1,
-          "texture": "Square White Slider Thumb.png",
-          "tiled": false,
-          "topMargin": 2,
-          "width": 22
-        }
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "MenuMaker",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -595,7 +458,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "UI\\Location.png",
+                  "image": "assets\\Location.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -639,7 +502,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "SettingsMaker",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -656,7 +518,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "UI\\Location.png",
+                  "image": "assets\\Location.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -700,7 +562,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "Background",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -717,7 +578,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "UI\\Background.png",
+                  "image": "assets\\european_medieval_village_by_klauspillon_d9667s2.jpg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -737,16 +598,16 @@
                         "y": 0
                       },
                       {
-                        "x": 1280,
+                        "x": 1400,
                         "y": 0
                       },
                       {
-                        "x": 1280,
-                        "y": 640
+                        "x": 1400,
+                        "y": 760
                       },
                       {
                         "x": 0,
-                        "y": 640
+                        "y": 760
                       }
                     ]
                   ]
@@ -756,8 +617,176 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "SoundSlider",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 28,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Square White Slider Border.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 265
+        },
+        "FillBar": {
+          "bottomMargin": 2,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Square White Slider Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Label": {
+          "bold": false,
+          "italic": true,
+          "smoothed": true,
+          "underlined": false,
+          "string": "It displays the value when it changes.",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 194,
+            "g": 227,
+            "r": 80
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 2,
+          "height": 36,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "Square White Slider Thumb.png",
+          "tiled": false,
+          "topMargin": 2,
+          "width": 22
+        }
+      }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "MusicSlider",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 28,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Square White Slider Border.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 265
+        },
+        "FillBar": {
+          "bottomMargin": 2,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Square White Slider Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "It displays the value when it changes.",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 221,
+            "g": 221,
+            "r": 221
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 2,
+          "height": 36,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "Square White Slider Thumb.png",
+          "tiled": false,
+          "topMargin": 2,
+          "width": 22
+        }
+      }
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Topdown_Shooter"
+      },
+      {
+        "objectName": "Survival"
+      },
+      {
+        "objectName": "Play"
+      },
+      {
+        "objectName": "Settings"
+      },
+      {
+        "objectName": "Quit"
+      },
+      {
+        "objectName": "Sound"
+      },
+      {
+        "objectName": "Music"
+      },
+      {
+        "objectName": "Back"
+      },
+      {
+        "objectName": "MenuMaker"
+      },
+      {
+        "objectName": "SettingsMaker"
+      },
+      {
+        "objectName": "Background"
+      },
+      {
+        "objectName": "SoundSlider"
+      },
+      {
+        "objectName": "MusicSlider"
+      }
+    ]
+  },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -811,7 +840,7 @@
           },
           "parameters": [
             "",
-            "\"Main Scene\"",
+            "\"Select Character\"",
             ""
           ]
         }
@@ -842,7 +871,7 @@
             "SettingsMaker.CenterX()",
             "CameraCenterY()",
             "",
-            "1000",
+            "500",
             "\"easeInOutQuad\""
           ]
         }
@@ -873,7 +902,7 @@
             "MenuMaker.CenterX()",
             "CameraCenterY()",
             "",
-            "1000",
+            "500",
             "\"easeInOutQuad\""
           ]
         }
@@ -1094,6 +1123,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
