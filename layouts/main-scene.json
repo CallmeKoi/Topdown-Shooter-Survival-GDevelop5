@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.993443349825967,
+    "zoomFactor": 0.6040838749988929,
     "windowMask": false
   },
   "objectsGroups": [
@@ -102,6 +102,29 @@
   "variables": [
     {
       "folded": true,
+      "name": "MaxXP",
+      "type": "number",
+      "value": 50
+    },
+    {
+      "name": "CurrentXP",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Level",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "folded": true,
+      "name": "LvlUp",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
       "name": "SpawnDir",
       "type": "number",
       "value": 0
@@ -112,20 +135,21 @@
       "children": [
         {
           "folded": true,
-          "name": "ChildVariable2",
-          "type": "string",
-          "value": ""
-        },
-        {
-          "name": "ChildVariable3",
-          "type": "string",
-          "value": ""
+          "name": "Health",
+          "type": "number",
+          "value": 0
         },
         {
           "folded": true,
-          "name": "Unnamed",
-          "type": "string",
-          "value": ""
+          "name": "Max_Health",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "move_spd",
+          "type": "number",
+          "value": 0
         }
       ]
     }
@@ -154,8 +178,8 @@
       "name": "ShotsUntilReload",
       "persistentUuid": "7a91e5aa-e55d-497a-aa85-a532f95103a5",
       "width": 0,
-      "x": 22,
-      "y": 190,
+      "x": 32,
+      "y": 192,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -169,7 +193,7 @@
       "layer": "UI",
       "name": "HealthBar",
       "persistentUuid": "a70f9943-3c0b-48d9-828d-6a9e2af4382a",
-      "width": 256,
+      "width": 288,
       "x": 32,
       "y": 64,
       "zOrder": 7,
@@ -202,8 +226,8 @@
       "name": "AmmoSprite",
       "persistentUuid": "397e8faf-710f-4d2f-aede-c720e6b0ee4b",
       "width": 103,
-      "x": 313,
-      "y": 201,
+      "x": 297,
+      "y": 199,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -214,13 +238,28 @@
       "customSize": true,
       "depth": 1,
       "height": 720,
-      "layer": "Background",
+      "layer": "",
       "name": "Background2",
       "persistentUuid": "07d0b8db-294a-4f67-b3b7-77e8b9c30ee7",
       "width": 1280,
       "x": 0,
-      "y": -1,
+      "y": 0,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Level",
+      "persistentUuid": "657f3e26-99af-480e-adc8-3b8a6b7e6bb3",
+      "width": 0,
+      "x": 224,
+      "y": 126,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2343,10 +2382,10 @@
                     "y": 9
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 8,
+                    "y": 9
                   },
                   "customCollisionMask": [
                     [
@@ -4155,6 +4194,257 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "2f2e0a3041de9073aa4242d4b71b03ff0433698ba14c1338659f757017944317",
+      "name": "XP_points",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 32,
+          "cellWidth": 32,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.25,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sparkles_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 5
+                      },
+                      {
+                        "x": 2,
+                        "y": 5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sparkles_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 5
+                      },
+                      {
+                        "x": 2,
+                        "y": 5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sparkles_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 5
+                      },
+                      {
+                        "x": 2,
+                        "y": 5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sparkles_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 3.5,
+                    "y": 3.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 2
+                      },
+                      {
+                        "x": 5,
+                        "y": 5
+                      },
+                      {
+                        "x": 2,
+                        "y": 5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Level",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Level: ",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "additive": false,
+      "assetStoreId": "85f99439726e532b49dcf86abd78d504bfc2b11aed5be239fd2bcc3e1e31c668",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 200,
+      "emitterForceMin": 50,
+      "flow": 50,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 15,
+      "name": "Bubbles",
+      "particleAlpha1": 255,
+      "particleAlpha2": 35,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 50,
+      "particleAngle2": 50,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 255,
+      "particleBlue2": 255,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 255,
+      "particleGreen2": 255,
+      "particleLifeTimeMax": 4,
+      "particleLifeTimeMin": 4,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 10,
+      "particleSize2": 75,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tank": -1,
+      "textureParticleName": "Bubble.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 0,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -4178,7 +4468,7 @@
         ]
       },
       {
-        "folderName": "Enemiy",
+        "folderName": "Enemy",
         "children": [
           {
             "objectName": "Swampy"
@@ -4228,6 +4518,15 @@
       },
       {
         "objectName": "Background2"
+      },
+      {
+        "objectName": "XP_points"
+      },
+      {
+        "objectName": "Level"
+      },
+      {
+        "objectName": "Bubbles"
       }
     ]
   },
@@ -4253,18 +4552,30 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Pause\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"GameOver\""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -4300,6 +4611,17 @@
                     "Player.Health::MaxHealth()",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "XPBar",
+                    "=",
+                    "MaxXP",
+                    ""
+                  ]
                 }
               ]
             },
@@ -4327,6 +4649,22 @@
                     "Gun",
                     "Equiped",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Background2",
+                    "=",
+                    "Player.ZOrder()-3000"
                   ]
                 }
               ]
@@ -4383,6 +4721,26 @@
                 "",
                 "Player",
                 "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "0",
+                "0",
+                "1280",
+                "720",
                 "",
                 ""
               ]
@@ -5109,6 +5467,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player is hit",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5186,6 +5545,56 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Dead",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Player",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Bubbles",
+                    "Player.X()",
+                    "Player.Y()",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "parameters": []
@@ -5195,7 +5604,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Enemy",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5254,16 +5662,6 @@
             },
             {
               "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "ShotsUntilReload",
-                "=",
-                "\"Shots Until Reload: \" + ToString(Player.FireBullet::ShotsBeforeNextReload())"
-              ]
-            },
-            {
-              "type": {
                 "value": "ResizableCapability::ResizableBehavior::SetWidth"
               },
               "parameters": [
@@ -5299,6 +5697,290 @@
                 "Health",
                 "=",
                 "\"Health: \" + ToString(Player.Health::Health())"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Update XP"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "XPBar",
+                "=",
+                "CurrentXP",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Upgrade",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Pick up XP"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "XP_points",
+                "30",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "XP_points",
+                "Pathfinding",
+                "",
+                "Player.X()",
+                "Player.CenterY()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "XP_points",
+                "5",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "XP_points",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "CurrentXP",
+                "+",
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Level Up"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "CurrentXP",
+                ">=",
+                "MaxXP"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Level",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "CurrentXP",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "LvlUp",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "LvlUp",
+                "True"
+              ]
+            }
+          ],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Dev Tools",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Level up"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Num1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "CurrentXP",
+                "=",
+                "MaxXP"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Dead"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Num2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                "Player.Health::MaxHealth()",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -5394,6 +6076,70 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "GameOver",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Pause",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

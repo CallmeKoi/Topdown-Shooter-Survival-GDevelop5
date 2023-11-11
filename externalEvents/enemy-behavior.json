@@ -218,6 +218,29 @@
                     "Enemies",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "XP_points",
+                    "Enemies.X()",
+                    "Enemies.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "XP_points",
+                    "Scale",
+                    "=",
+                    "2"
+                  ]
                 }
               ]
             }

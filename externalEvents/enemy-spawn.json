@@ -77,7 +77,7 @@
                     "",
                     "Enemies",
                     "<",
-                    "100"
+                    "50*Variable(Level)"
                   ]
                 }
               ],

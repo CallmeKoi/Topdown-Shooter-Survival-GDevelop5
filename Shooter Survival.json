@@ -1177,6 +1177,71 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
           "name": "Square White Slider Thumb.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sparkles_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sparkles_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 5/Lil Wiz/fac8e72867b6a9304136dfd5a1a46465a292ec3b0b44707717c24ea866a847b8_Sparkles_1.png",
+          "name": "Sparkles_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sparkles_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sparkles_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 5/Lil Wiz/1c41f3efe9b50fb286398656b31bcb19b1701b53e1650b85f1e814db3576ae48_Sparkles_2.png",
+          "name": "Sparkles_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sparkles_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sparkles_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 5/Lil Wiz/4af06607b3963ad618d877c94434a5db51b132c4e9e670b17537eca119ce39a6_Sparkles_3.png",
+          "name": "Sparkles_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sparkles_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sparkles_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 5/Lil Wiz/8093aa9bc2aba59753e8b683deda873f95dffd69062d7804b5652813df466844_Sparkles_4.png",
+          "name": "Sparkles_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bubble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bubble.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/12254a94cf3e8dbc4bcccadf4f2f761ee0736f0abe7405c4a419fab822ba90ca_Bubble.png",
+          "name": "Bubble.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -1281,6 +1346,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/boidsmovement"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/buttonstates"
