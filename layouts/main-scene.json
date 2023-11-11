@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.511778403521022,
+    "zoomFactor": 0.993443349825967,
     "windowMask": false
   },
   "objectsGroups": [
@@ -163,21 +163,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Gun",
-      "persistentUuid": "2451f8b2-d5fb-43d3-a1d0-3b135412cc27",
-      "width": 0,
-      "x": 608,
-      "y": 288,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 32,
       "height": 48,
@@ -229,7 +214,7 @@
       "customSize": true,
       "depth": 1,
       "height": 720,
-      "layer": "",
+      "layer": "Background",
       "name": "Background2",
       "persistentUuid": "07d0b8db-294a-4f67-b3b7-77e8b9c30ee7",
       "width": 1280,
@@ -4176,16 +4161,55 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Knight"
+        "folderName": "Player",
+        "children": [
+          {
+            "objectName": "Wizarad"
+          },
+          {
+            "objectName": "Lizard"
+          },
+          {
+            "objectName": "Elf"
+          },
+          {
+            "objectName": "Knight"
+          }
+        ]
       },
       {
-        "objectName": "Elf"
+        "folderName": "Enemiy",
+        "children": [
+          {
+            "objectName": "Swampy"
+          },
+          {
+            "objectName": "Orc"
+          },
+          {
+            "objectName": "Imp"
+          }
+        ]
       },
       {
-        "objectName": "Lizard"
-      },
-      {
-        "objectName": "Wizarad"
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "Ammo_Qty"
+          },
+          {
+            "objectName": "ShotsUntilReload"
+          },
+          {
+            "objectName": "Health"
+          },
+          {
+            "objectName": "XPBar"
+          },
+          {
+            "objectName": "HealthBar"
+          }
+        ]
       },
       {
         "objectName": "Gun"
@@ -4194,34 +4218,10 @@
         "objectName": "Spawner"
       },
       {
-        "objectName": "Imp"
-      },
-      {
-        "objectName": "Orc"
-      },
-      {
         "objectName": "Bullet"
       },
       {
-        "objectName": "Swampy"
-      },
-      {
-        "objectName": "Ammo_Qty"
-      },
-      {
-        "objectName": "ShotsUntilReload"
-      },
-      {
-        "objectName": "Health"
-      },
-      {
         "objectName": "Button"
-      },
-      {
-        "objectName": "HealthBar"
-      },
-      {
-        "objectName": "XPBar"
       },
       {
         "objectName": "AmmoSprite"
@@ -5308,6 +5308,38 @@
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,

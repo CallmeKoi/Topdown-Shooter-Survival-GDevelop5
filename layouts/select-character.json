@@ -1453,52 +1453,67 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "LabelKnight"
+        "folderName": "Character",
+        "children": [
+          {
+            "objectName": "Character4"
+          },
+          {
+            "objectName": "Character3"
+          },
+          {
+            "objectName": "Character2"
+          },
+          {
+            "objectName": "Character1"
+          }
+        ]
       },
       {
-        "objectName": "LabelElf"
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "SelectCharacter"
+          },
+          {
+            "objectName": "LabelLizard"
+          },
+          {
+            "objectName": "LabelWizarad"
+          },
+          {
+            "objectName": "LabelElf"
+          },
+          {
+            "objectName": "LabelKnight"
+          }
+        ]
       },
       {
-        "objectName": "LabelWizarad"
-      },
-      {
-        "objectName": "LabelLizard"
-      },
-      {
-        "objectName": "SelectCharacter"
-      },
-      {
-        "objectName": "ButtonOK"
-      },
-      {
-        "objectName": "Character1"
-      },
-      {
-        "objectName": "Character2"
-      },
-      {
-        "objectName": "Character3"
-      },
-      {
-        "objectName": "Character4"
-      },
-      {
-        "objectName": "HitBox"
-      },
-      {
-        "objectName": "SelectFrame"
-      },
-      {
-        "objectName": "Maker1"
-      },
-      {
-        "objectName": "Maker2"
-      },
-      {
-        "objectName": "Maker3"
-      },
-      {
-        "objectName": "Maker4"
+        "folderName": "UX",
+        "children": [
+          {
+            "objectName": "HitBox"
+          },
+          {
+            "objectName": "ButtonOK"
+          },
+          {
+            "objectName": "SelectFrame"
+          },
+          {
+            "objectName": "Maker1"
+          },
+          {
+            "objectName": "Maker2"
+          },
+          {
+            "objectName": "Maker3"
+          },
+          {
+            "objectName": "Maker4"
+          }
+        ]
       }
     ]
   },
