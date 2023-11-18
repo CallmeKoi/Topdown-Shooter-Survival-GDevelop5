@@ -235,16 +235,15 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 720,
+      "customSize": false,
+      "height": 0,
       "layer": "",
-      "name": "Background2",
-      "persistentUuid": "07d0b8db-294a-4f67-b3b7-77e8b9c30ee7",
-      "width": 1280,
+      "name": "Background",
+      "persistentUuid": "70e30c80-d7b0-4467-83f4-1bfdc536843e",
+      "width": 0,
       "x": 0,
       "y": 0,
-      "zOrder": 12,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3116,7 +3115,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Background2",
+      "name": "Background",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -4445,6 +4444,7 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+
     }
   ],
   "objectsFolderStructure": {
@@ -4555,20 +4555,14 @@
           "actions": [
             {
               "type": {
-                "value": "HideLayer"
+                "value": "PlayMusic"
               },
               "parameters": [
                 "",
-                "\"Pause\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"GameOver\""
+                "assets\\Nhạc nền.mp3",
+                "yes",
+                "GlobalVariable(Settings.Music)",
+                ""
               ]
             }
           ],
@@ -4764,7 +4758,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Movements Control",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4877,6 +4870,43 @@
                   "parameters": [
                     "Player",
                     "TopDownMovement"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Dừng"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Escape"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Pause Menu\""
                   ]
                 }
               ]
@@ -5034,7 +5064,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Gun",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5238,7 +5267,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5400,6 +5428,18 @@
                         "Gun.Angle()",
                         "300",
                         "250"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "New sound effect",
+                        "",
+                        "GlobalVariable(Settings.Sound)",
+                        ""
                       ]
                     }
                   ]
@@ -5630,6 +5670,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "UI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5996,38 +6037,6 @@
       "ambientLightColorR": 200,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Background",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
@@ -6071,10 +6080,10 @@
       "ambientLightColorR": 200,
       "camera3DFarPlaneDistance": 10000,
       "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 0.1,
+      "camera3DNearPlaneDistance": 3,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "isLocked": false,
+      "isLocked": true,
       "name": "UI",
       "renderingType": "",
       "visibility": true,
