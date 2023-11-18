@@ -245,7 +245,7 @@
       "customSize": false,
       "height": 0,
       "layer": "Background",
-      "name": "NewSprite",
+      "name": "BackgroundSelect",
       "persistentUuid": "612d60f6-1b98-426c-9ac0-5a589a86a1ab",
       "width": 0,
       "x": 0,
@@ -1466,7 +1466,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "BackgroundSelect",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1483,7 +1483,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Background.png",
+                  "image": "assets\\Nen tron.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1589,6 +1589,9 @@
             "objectName": "Maker4"
           }
         ]
+      },
+      {
+        "objectName": "BackgroundSelect"
       }
     ]
   },

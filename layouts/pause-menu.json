@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Main_32Menu",
-  "name": "Main Menu",
+  "mangledName": "Pause_32Menu",
+  "name": "Pause Menu",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -93,10 +93,10 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "Play",
+      "name": "Resume",
       "persistentUuid": "a2c838f4-051e-4399-a09e-bd81fbc626a3",
       "width": 0,
-      "x": 560,
+      "x": 518,
       "y": 424,
       "zOrder": 5,
       "numberProperties": [],
@@ -272,7 +272,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Play",
+      "name": "Resume",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -290,7 +290,7 @@
           "Index": 0
         }
       ],
-      "string": "Play",
+      "string": "Resume",
       "font": "assets\\Elfboyclassic-PKZgZ.ttf",
       "textAlignment": "center",
       "characterSize": 80,
@@ -753,7 +753,7 @@
         "objectName": "Survival"
       },
       {
-        "objectName": "Play"
+        "objectName": "Resume"
       },
       {
         "objectName": "Settings"
@@ -827,7 +827,7 @@
             "value": "ButtonStates::ButtonFSM::IsClicked"
           },
           "parameters": [
-            "Play",
+            "Resume",
             "ButtonFSM",
             ""
           ]
@@ -836,11 +836,9 @@
       "actions": [
         {
           "type": {
-            "value": "Scene"
+            "value": "PopScene"
           },
           "parameters": [
-            "",
-            "\"Select Character\"",
             ""
           ]
         }
