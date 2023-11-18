@@ -620,15 +620,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Elf Male_Run_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Elf Male_Run_5.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Elf Male_Hit.png",
         "kind": "image",
         "metadata": "",
@@ -684,29 +675,11 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "UI/Location.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "UI\\Location.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Imp_Hurt_1.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Imp_Hurt_1",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_SelectFrame2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "assets\\SelectFrame2",
-        "smoothed": true,
         "userAdded": true
       },
       {
@@ -786,15 +759,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "assets\\Health_01_Bar02_x3.png2",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/forest_temple_entrance_by_hassly_demuovy.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\forest_temple_entrance_by_hassly_demuovy.jpg",
         "smoothed": true,
         "userAdded": true
       },
@@ -1102,45 +1066,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Blue Slider Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square Blue Slider Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/4358a20ce4a1e83f8643b287f37cefadefc1941d23cfdc50a3836ecd0dd209f1_Square Blue Slider Border.png",
-          "name": "Square Blue Slider Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square Blue Slider Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square Blue Slider Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/71e7d4c8549a750e6e7b6bc6508a352176cb64a57129e96bdd8f2c5bbc187820_Square Blue Slider Fill Bar.png",
-          "name": "Square Blue Slider Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square Blue Slider Thumb.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square Blue Slider Thumb.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/984a68a8bbb562d3f01a8a1993720778df07d37bb3314ed6f1aaf3d4f0edede3_Square Blue Slider Thumb.png",
-          "name": "Square Blue Slider Thumb.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Square White Slider Border2.png",
         "kind": "image",
         "metadata": "",
@@ -1242,7 +1167,7 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/12254a94cf3e8dbc4bcccadf4f2f761ee0736f0abe7405c4a419fab822ba90ca_Bubble.png",
           "name": "Bubble.png"
         }
-      },      
+      },
       {
         "alwaysLoaded": false,
         "file": "assets/crosshair026.png",
@@ -1251,15 +1176,6 @@
         "name": "assets\\crosshair026.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_SelectFrame.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "assets\\SelectFrame",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "file": "assets/Nhạc nền.mp3",
@@ -1279,6 +1195,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Nen tron.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Nen tron.png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -1366,12 +1291,12 @@
           "folded": true,
           "name": "Music",
           "type": "number",
-          "value": 0
+          "value": 50
         },
         {
           "name": "Sound",
           "type": "number",
-          "value": 0
+          "value": 50
         }
       ]
     }
